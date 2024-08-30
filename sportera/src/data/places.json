@@ -1,0 +1,344 @@
+[
+  {
+    "Name": "Newpark gym",
+    "Latitude": 49.1812748,
+    "Longitude": 16.6027828,
+    "Sport": "gym",
+    "Description": "Prostorná posilovna se zónami pro kardio, strongman i crossfit.",
+    "Image1": "/images/places/gym_newpark/newpark1.jpg",
+    "Image2": "/images/places/gym_newpark/newpark2.jpg"
+  },
+  {
+    "Name": "Fotbal hřiště u Taneční konzervatoře",
+    "Latitude": 49.227114,
+    "Longitude": 16.626407,
+    "Sport": "foo",
+    "Description": "Fotbalové hřiště s menšími brankami",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Volejbalové a nohejbalové hřiště",
+    "Latitude": 49.202912,
+    "Longitude": 16.581949,
+    "Sport": "vol",
+    "Description": "Volejbalové, nohejbalové a tenisové hřiště s umělým travnatým povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal kraví hora",
+    "Latitude": 49.203341,
+    "Longitude": 16.58505,
+    "Sport": "bf",
+    "Description": "Basketbalové hřiště s brankami na futsál",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal Klusáčkova",
+    "Latitude": 49.211717,
+    "Longitude": 16.592105,
+    "Sport": "bas",
+    "Description": "Basketbalový koš pro 3v3",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal Kartouzská",
+    "Latitude": 49.215257,
+    "Longitude": 16.597708,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s umělým povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Parkour hřiště Kartouzská",
+    "Latitude": 49.215555,
+    "Longitude": 16.597235,
+    "Sport": "par",
+    "Description": "Parkour hřiště s překážkami pro začátečníky",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal Červinkova",
+    "Latitude": 49.225107,
+    "Longitude": 16.581453,
+    "Sport": "bas",
+    "Description": "Hřiště z 6 košema na basket 3v3",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal/kluziště Vodová",
+    "Latitude": 49.226305,
+    "Longitude": 16.585243,
+    "Sport": "bf",
+    "Description": "Basketbalové hřiště s 4 košema a 2 brankami na florbal a hazenou",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Futsál Opička",
+    "Latitude": 49.229136,
+    "Longitude": 16.583922,
+    "Sport": "foo",
+    "Description": "Futsalové hřiště s",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsal Herčíkova",
+    "Latitude": 49.231386,
+    "Longitude": 16.583964,
+    "Sport": "bf",
+    "Description": "Hřište na basket a futsal s umělým povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket Mánesova",
+    "Latitude": 49.231429,
+    "Longitude": 16.586736,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s betonovým povrchem a bez sítí",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Boulder Palackého Vrch",
+    "Latitude": 49.227893,
+    "Longitude": 16.571494,
+    "Sport": "bou",
+    "Description": "Park na bouldering",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Futsálové hřiště Palackého koleje",
+    "Latitude": 49.232388,
+    "Longitude": 16.571077,
+    "Sport": "foo",
+    "Description": "Futsalové hřiště s pískovým povrchem a 2 brankami",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Futsal/basket hřiště Decathlon Ivanovice",
+    "Latitude": 49.260813,
+    "Longitude": 16.580411,
+    "Sport": "bf",
+    "Description": "Futsal/basket hřište s umělým povrchem - možnost půjčení míče v Decathonu",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket Blažkova",
+    "Latitude": 49.230192,
+    "Longitude": 16.626129,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s menším oválem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsal Čertova rokle",
+    "Latitude": 49.228793,
+    "Longitude": 16.626904,
+    "Sport": "bf",
+    "Description": "Futsal/basket hřiště s umělým travnatým povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal Taneční konzervatoř",
+    "Latitude": 49.227017,
+    "Longitude": 16.625817,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s horším povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal Slavíčkova",
+    "Latitude": 49.225548,
+    "Longitude": 16.619646,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s 4 košema v horším stavu a betonovým povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basketbal zastávka Heleny Malířové",
+    "Latitude": 49.222735,
+    "Longitude": 16.629669,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s asfaltovým povrchem a 1 košem idealní pro hru 3v3",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsál na Vyhlídce",
+    "Latitude": 49.223675,
+    "Longitude": 16.633495,
+    "Sport": "bf",
+    "Description": "Basket/futsal hřiště s umělým povrchem a zábranami",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Workout hřiště na Vyhlídce",
+    "Latitude": 49.223594,
+    "Longitude": 16.633269,
+    "Sport": "wor",
+    "Description": "workout hřiště ve skvělém stavu",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Parkour Arbesova",
+    "Latitude": 49.22797,
+    "Longitude": 16.631886,
+    "Sport": "par",
+    "Description": "Parkour hřiště s těžšíma překážkama",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket Štefánikova",
+    "Latitude": 49.215832,
+    "Longitude": 16.62861,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště bez zábran",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsal Tomanova",
+    "Latitude": 49.207834,
+    "Longitude": 16.62111,
+    "Sport": "bf",
+    "Description": "Basket/futsál hřiště s umělým povrchem",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Workout Lužánky",
+    "Latitude": 49.207399,
+    "Longitude": 16.60755,
+    "Sport": "wor",
+    "Description": "Workout v dobrém stavu",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket Vlněná",
+    "Latitude": 49.189854,
+    "Longitude": 16.618152,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s 1 košem ideální pro hru 3v3",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsál Zvonařka",
+    "Latitude": 49.188079,
+    "Longitude": 16.620454,
+    "Sport": "bf",
+    "Description": "Basket/futsal hřiště s betonovým povrchem a vysokým ohraničením",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsál Nové sady",
+    "Latitude": 49.18654,
+    "Longitude": 16.603186,
+    "Sport": "bf",
+    "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/volleybal hřiště Zahradnická",
+    "Latitude": 49.186909,
+    "Longitude": 16.597369,
+    "Sport": "bfv",
+    "Description": "Multifunkční hřiště s 1 košem na basket a tyčema pro umístění sítě pro volejbal",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket/futsál Celní",
+    "Latitude": 49.178235,
+    "Longitude": 16.594173,
+    "Sport": "bf",
+    "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Workout Lužánecká",
+    "Latitude": 49.205097,
+    "Longitude": 16.612072,
+    "Sport": "wor",
+    "Description": "Workut hřiště ve skvělém stavu",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Inline park Lužánky",
+    "Latitude": 49.205139,
+    "Longitude": 16.612319,
+    "Sport": "ska",
+    "Description": "",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Volejbalové kurty Lužánky",
+    "Latitude": 49.205405,
+    "Longitude": 16.612604,
+    "Sport": "vol",
+    "Description": "Volejbalové kurty - Potřeba rezervace",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Workout Herčíkova",
+    "Latitude": 49.231264,
+    "Longitude": 16.583811,
+    "Sport": "wor",
+    "Description": "Workout hřiště ve skvělém stavu",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Basket park Božetěchova",
+    "Latitude": 49.228446,
+    "Longitude": 16.596763,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s velkým ohraničením",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Workout park Božetěchova",
+    "Latitude": 49.228348,
+    "Longitude": 16.596365,
+    "Sport": "wor",
+    "Description": "Workout hřiště ve skvělém stavu",
+    "Image1": "",
+    "Image2": ""
+  },
+  {
+    "Name": "Stolní tenis Nová Zbrojovka",
+    "Latitude": 49.207751,
+    "Longitude": 16.635032,
+    "Sport": "pin",
+    "Description": "Stůl na ping pong ve skvělém stavu",
+    "Image1": "",
+    "Image2": ""
+  }
+]

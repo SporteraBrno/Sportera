@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sportera.cz/sitemap.xml
