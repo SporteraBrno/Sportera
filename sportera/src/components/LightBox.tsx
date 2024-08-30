@@ -71,12 +71,8 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
       </div>
       {images.length > 1 && (
         <>
-          <button className="lightbox-nav prev" onClick={(e) => { e.stopPropagation(); goToPrevious(); }}>
-            &lt;
-          </button>
-          <button className="lightbox-nav next" onClick={(e) => { e.stopPropagation(); goToNext(); }}>
-            &gt;
-          </button>
+<button className="lightbox-nav prev" onClick={(e) => { e.stopPropagation(); goToPrevious(); }} />
+<button className="lightbox-nav next" onClick={(e) => { e.stopPropagation(); goToNext(); }} />
         </>
       )}
     </div>

@@ -242,6 +242,16 @@ const Map: React.FC = React.memo(() => {
       <div className={`filters-container ${isFiltersVisible ? 'visible' : ''}`}>
         <SportFilters selectedSports={selectedSports} onToggleSport={toggleSport} />
       </div>
+      {isFiltersVisible && (
+        <a 
+          href="https://www.instagram.com/sporterabrno" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="instagram-link"
+        >
+          <img src="/images/instagram_logo.svg" alt="Follow us on Instagram" className="instagram-logo" />
+        </a>
+      )}
       {lightboxImages.length > 0 && (
         <Lightbox 
           images={lightboxImages}

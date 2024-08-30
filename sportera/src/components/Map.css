@@ -184,13 +184,22 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
   border: none;
-  font-size: 24px;
-  padding: 16px;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: 'Verdana', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .lightbox-nav.prev {
   left: 10px;
@@ -198,6 +207,17 @@
 
 .lightbox-nav.next {
   right: 10px;
+}
+
+/* You can use these classes in your JSX instead of < and > characters */
+.lightbox-nav.prev::after {
+  content: "‹";
+  margin-bottom: 4px;
+}
+
+.lightbox-nav.next::after {
+  content: "›";
+  margin-bottom: 4px;
 }
 
 .lightbox-image-container {
@@ -213,4 +233,29 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.instagram-link {
+  position: fixed;
+  bottom: 15px;
+  right: 120px; /* Adjust this value to position it relative to the filter button */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1);
+}
+
+.instagram-logo {
+  width: 45px;
+  height: 45px;
 }
