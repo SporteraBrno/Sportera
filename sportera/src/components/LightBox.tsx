@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, TouchEvent, useState } from 'react';
+import React, { useCallback, useRef, TouchEvent, useState, useEffect } from 'react';
 
 interface LightboxProps {
   images: string[];
@@ -30,7 +30,7 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
     const touchEndX = e.changedTouches[0].clientX;
     const diff = touchStartX.current - touchEndX;
 
-    if (Math.abs(diff) > 100) { // Increased threshold for actual swipe
+    if (Math.abs(diff) > 50) {
       if (diff > 0) {
         goToNext();
       } else {
@@ -50,6 +50,23 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
   const goToPrevious = useCallback(() => {
     onNavigate((currentIndex - 1 + images.length) % images.length);
   }, [currentIndex, images.length, onNavigate]);
+
+  const handleKeyDown = useCallback((event: KeyboardEvent) => {
+    if (event.key === 'ArrowRight') {
+      goToNext();
+    } else if (event.key === 'ArrowLeft') {
+      goToPrevious();
+    } else if (event.key === 'Escape') {
+      onClose();
+    }
+  }, [goToNext, goToPrevious, onClose]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleKeyDown]);
 
   const imageStyle = {
     transform: `translateX(${-dragDistance}px)`,
@@ -71,8 +88,8 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
       </div>
       {images.length > 1 && (
         <>
-<button className="lightbox-nav prev" onClick={(e) => { e.stopPropagation(); goToPrevious(); }} />
-<button className="lightbox-nav next" onClick={(e) => { e.stopPropagation(); goToNext(); }} />
+          <button className="lightbox-nav prev" onClick={(e) => { e.stopPropagation(); goToPrevious(); }} />
+          <button className="lightbox-nav next" onClick={(e) => { e.stopPropagation(); goToNext(); }} />
         </>
       )}
     </div>
