@@ -235,27 +235,32 @@
   object-fit: contain;
 }
 
-.instagram-link {
+.social-links {
   position: fixed;
-  bottom: 15px;
-  right: 120px; /* Adjust this value to position it relative to the filter button */
+  top: 15px;
+  left: 15px;
   z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
 }
 
-.instagram-link:hover {
+.social-link:hover {
   transform: scale(1.1);
 }
 
-.instagram-logo {
-  width: 45px;
-  height: 45px;
+.social-logo {
+  width: 40px;
+  height: 40px;
 }

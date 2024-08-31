@@ -230,6 +230,24 @@ const Map: React.FC = React.memo(() => {
   return (
     <div className="map-container">
       <div ref={mapRef} className="map" aria-label="Map of sport locations" />
+      <div className="social-links">
+        <a 
+          href="https://www.instagram.com/sporterabrno" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-link instagram-link"
+        >
+          <img src="/images/instagram_logo.svg" alt="Follow us on Instagram" className="social-logo" />
+        </a>
+        <a 
+          href="https://www.tiktok.com/@sporterabrno" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-link tiktok-link"
+        >
+          <img src="/images/tiktok_logo.svg" alt="Follow us on TikTok" className="social-logo" />
+        </a>
+      </div>
       {!isFiltersVisible && (
         <button 
           className="filter-toggle-button"
@@ -242,16 +260,6 @@ const Map: React.FC = React.memo(() => {
       <div className={`filters-container ${isFiltersVisible ? 'visible' : ''}`}>
         <SportFilters selectedSports={selectedSports} onToggleSport={toggleSport} />
       </div>
-      {isFiltersVisible && (
-        <a 
-          href="https://www.instagram.com/sporterabrno" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="instagram-link"
-        >
-          <img src="/images/instagram_logo.svg" alt="Follow us on Instagram" className="instagram-logo" />
-        </a>
-      )}
       {lightboxImages.length > 0 && (
         <Lightbox 
           images={lightboxImages}
