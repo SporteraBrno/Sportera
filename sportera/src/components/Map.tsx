@@ -4,7 +4,11 @@ import places from '../data/places.json';
 import * as markers from '../assets/markers';
 import SportFilters from './SportFilters';
 import Lightbox from './LightBox';
-import './Map.css';
+import './styles/Map.css';
+import './styles/Filters.css';
+import './styles/SocialLinks.css';
+import './styles/Callouts.css';
+import './styles/Lightbox.css';
 
 declare global {
   interface Window {
@@ -248,15 +252,13 @@ const Map: React.FC = React.memo(() => {
           <img src="/images/tiktok_logo.svg" alt="Follow us on TikTok" className="social-logo" />
         </a>
       </div>
-      {!isFiltersVisible && (
-        <button 
-          className="filter-toggle-button"
-          onClick={toggleFilters}
-          aria-label="Toggle sport filters"
-        >
-          <img src="/images/logo.png" alt="Sportera logo" />
-        </button>
-      )}
+      <button 
+        className={`filter-toggle-button ${isFiltersVisible ? 'hidden' : ''}`}
+        onClick={toggleFilters}
+        aria-label="Toggle sport filters"
+      >
+        <img src="/images/logo.png" alt="Sportera logo" />
+      </button>
       <div className={`filters-container ${isFiltersVisible ? 'visible' : ''}`}>
         <SportFilters selectedSports={selectedSports} onToggleSport={toggleSport} />
       </div>

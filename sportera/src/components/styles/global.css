@@ -17,17 +17,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.app-title {
-  font-family: 'Exo 2', sans-serif;
-  color: #23E1B9;
-  margin: 10px 0;
-  font-size: 40px;
-  text-align: center;
-  font-weight: bolder;
-}
-
-.map-container {
-  flex: 1;
-  position: relative;
-}

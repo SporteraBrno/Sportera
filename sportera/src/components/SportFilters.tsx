@@ -1,5 +1,6 @@
 import React from 'react';
 import * as markers from '../assets/markers';
+import './styles/Filters.css';
 
 interface SportFiltersProps {
   selectedSports: string[];
@@ -24,7 +25,6 @@ const sportIcons: { [key: string]: string } = {
 const SportFilters: React.FC<SportFiltersProps> = ({ selectedSports, onToggleSport }) => {
   const isSportActive = (sport: string) => {
     if (selectedSports.includes(sport)) {
-      // For BF and BFV, check if they are explicitly selected
       if (sport === 'bf' || sport === 'bfv') {
         return selectedSports.includes(sport);
       }
@@ -34,16 +34,18 @@ const SportFilters: React.FC<SportFiltersProps> = ({ selectedSports, onToggleSpo
   };
 
   return (
-    <div className="sport-filters">
-      {Object.entries(sportIcons).map(([sport, icon]) => (
-        <button
-          key={sport}
-          className={`sport-filter-button ${isSportActive(sport) ? 'active' : 'inactive'}`}
-          onClick={() => onToggleSport(sport)}
-        >
-          <img src={icon} alt={sport} className="sport-icon" />
-        </button>
-      ))}
+    <div className="sport-filters-wrapper">
+      <div className="sport-filters">
+        {Object.entries(sportIcons).map(([sport, icon]) => (
+          <button
+            key={sport}
+            className={`sport-filter-button ${isSportActive(sport) ? 'active' : 'inactive'}`}
+            onClick={() => onToggleSport(sport)}
+          >
+            <img src={icon} alt={sport} className="sport-icon" />
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
