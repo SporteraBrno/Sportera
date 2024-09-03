@@ -54,7 +54,7 @@
       display: flex;
       overflow-x: auto;
       gap: 2px;
-      padding: 0 5px 5px;
+      padding: 0 5px 0px;
       margin: 0 -5px; 
     }
   

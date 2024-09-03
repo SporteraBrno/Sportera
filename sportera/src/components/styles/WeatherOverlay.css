@@ -18,6 +18,10 @@
   align-items: center;
   transition: all 0.3s ease;
   font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .temperature {
