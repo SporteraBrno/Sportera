@@ -42,20 +42,6 @@ declare namespace mapkit {
     };
   }
 
-  namespace services {
-    class Weather {
-      temperature(coordinate: Coordinate): Promise<WeatherData>;
-      // Add other WeatherKit methods as needed
-    }
-  }
-
-  interface WeatherData {
-    temperature: {
-      value: number;
-      unit: string;
-    };
-    // Add other weather data properties as needed
-  }
 
   interface MapConstructorOptions {
     center?: Coordinate;

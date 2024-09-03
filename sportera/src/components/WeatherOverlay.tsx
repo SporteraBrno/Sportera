@@ -1,61 +1,51 @@
 import React, { useEffect, useState } from 'react';
+import './styles/WeatherOverlay.css';
 
-interface WeatherOverlayProps {
-  mapkit: any;
+interface OpenMeteoWeatherOverlayProps {
   coordinate: { latitude: number; longitude: number };
 }
 
-const WeatherOverlay: React.FC<WeatherOverlayProps> = ({ mapkit, coordinate }) => {
+const OpenMeteoWeatherOverlay: React.FC<OpenMeteoWeatherOverlayProps> = ({ coordinate }) => {
   const [temperature, setTemperature] = useState<number | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchWeather = async () => {
-      console.log("Attempting to fetch weather...");
-      console.log("MapKit object:", mapkit);
-      console.log("MapKit services:", mapkit.services);
       setLoading(true);
       setError(null);
       try {
-        if (!mapkit.services || !mapkit.services.Weather) {
-          throw new Error("WeatherKit service is not available");
-        }
-        const weatherService = new mapkit.services.Weather();
-        console.log("Weather service created");
-        const result = await weatherService.temperature(new mapkit.Coordinate(coordinate.latitude, coordinate.longitude));
-        console.log("Weather data received:", result);
-        if (result && result.temperature && typeof result.temperature.value === 'number') {
-          setTemperature(Math.round(result.temperature.value));
+        const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${coordinate.latitude}&longitude=${coordinate.longitude}&current_weather=true`);
+        const data = await response.json();
+
+        if (data.current_weather && typeof data.current_weather.temperature === 'number') {
+          setTemperature(Math.round(data.current_weather.temperature));
         } else {
           throw new Error("Unexpected weather data format");
         }
-      } catch (err: unknown) {
+      } catch (err) {
         console.error('Error fetching weather:', err);
-        if (err instanceof Error) {
-          setError(`Failed to fetch weather data: ${err.message}`);
-        } else {
-          setError('Failed to fetch weather data: Unknown error');
-        }
+        setError(err instanceof Error ? err.message : 'Unknown error');
       } finally {
         setLoading(false);
       }
     };
 
     fetchWeather();
-  }, [mapkit, coordinate]);
 
-  console.log("Weather Overlay State:", { loading, error, temperature });
+    const intervalId = setInterval(fetchWeather, 15 * 60 * 1000); // Update every 15 minutes
+    return () => clearInterval(intervalId);
+  }, [coordinate]);
 
-  if (loading) return <div className="weather-overlay">Loading weather...</div>;
-  if (error) return <div className="weather-overlay">Error: {error}</div>;
-  if (temperature === null) return <div className="weather-overlay">No weather data available</div>;
+  if (loading) return <div className="weather-overlay">Loading...</div>;
+  if (error) return null; // Hide the overlay if there's an error
+  if (temperature === null) return null;
 
   return (
     <div className="weather-overlay">
-      <span>{temperature}°C</span>
+      <span className="temperature">{temperature}°</span>
     </div>
   );
 };
 
-export default WeatherOverlay;
+export default OpenMeteoWeatherOverlay;

@@ -4,11 +4,13 @@ import places from '../data/places.json';
 import * as markers from '../assets/markers';
 import SportFilters from './SportFilters';
 import Lightbox from './LightBox';
+import OpenMeteoWeatherOverlay from './WeatherOverlay';
 import './styles/Map.css';
 import './styles/Filters.css';
 import './styles/SocialLinks.css';
 import './styles/Callouts.css';
 import './styles/Lightbox.css';
+import './styles/WeatherOverlay.css';
 
 declare global {
   interface Window {
@@ -25,6 +27,8 @@ interface Place {
   Image1: string;
   Image2: string;
 }
+
+const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
 
 const Map: React.FC = React.memo(() => {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -270,6 +274,7 @@ const Map: React.FC = React.memo(() => {
           onNavigate={(newIndex) => setLightboxIndex(newIndex)}
         />
       )}
+      <OpenMeteoWeatherOverlay coordinate={brnoCoordinates} />
     </div>
   );
 });
