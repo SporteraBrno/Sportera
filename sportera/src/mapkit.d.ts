@@ -4,6 +4,7 @@ declare namespace mapkit {
     addAnnotation(annotation: Annotation): void;
     addEventListener(type: string, listener: Function): void;
     destroy(): void;
+    showsUserLocation: boolean;
   }
 
   class Coordinate {

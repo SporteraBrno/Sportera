@@ -19,5 +19,5 @@ export default defineConfig({
       'mapkit': path.resolve(__dirname, './src/mapkit.d.ts'),
     },
   },
-  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg'],
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg','**/*.svg'],
 })

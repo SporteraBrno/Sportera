@@ -10,7 +10,6 @@ export const mapKitConfig = {
     showsZoomControl: false,
     showsMapTypeControl: true,
     showsPointsOfInterest: false,
-    showsUserLocation: true,
     isRotationEnabled: true,
     showsCompass: "hidden",
     showsScale: "hidden"

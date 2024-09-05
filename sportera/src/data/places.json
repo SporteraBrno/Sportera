@@ -5,8 +5,17 @@
     "Longitude": 16.6027828,
     "Sport": "gym",
     "Description": "Prostorná posilovna se zónami pro kardio, strongman i crossfit.",
-    "Image1": "/images/places/gym_newpark/newpark1.jpg",
-    "Image2": "/images/places/gym_newpark/newpark2.jpg"
+    "Opening": "",
+    "Folder": "gym_newpark"
+  },
+  {
+    "Name": "Vlněná basket",
+    "Latitude": 49.18972,
+    "Longitude": 16.61824,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště s 1 košem ideální pro hru 3v3",
+    "Opening": "",
+    "Folder": "bas_vlnena"
   },
   {
     "Name": "Fotbal hřiště u Taneční konzervatoře",
@@ -14,8 +23,8 @@
     "Longitude": 16.626407,
     "Sport": "foo",
     "Description": "Fotbalové hřiště s menšími brankami",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Volejbalové a nohejbalové hřiště",
@@ -23,8 +32,8 @@
     "Longitude": 16.581949,
     "Sport": "vol",
     "Description": "Volejbalové, nohejbalové a tenisové hřiště s umělým travnatým povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basketbal kraví hora",
@@ -32,17 +41,17 @@
     "Longitude": 16.58505,
     "Sport": "bf",
     "Description": "Basketbalové hřiště s brankami na futsál",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basketbal Klusáčkova",
     "Latitude": 49.211717,
     "Longitude": 16.592105,
-    "Sport": "bas",
+    "Sport": "bf",
     "Description": "Basketbalový koš pro 3v3",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bf_klusackova"
   },
   {
     "Name": "Basketbal Kartouzská",
@@ -50,8 +59,8 @@
     "Longitude": 16.597708,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s umělým povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bas_kartouzska"
   },
   {
     "Name": "Parkour hřiště Kartouzská",
@@ -59,17 +68,17 @@
     "Longitude": 16.597235,
     "Sport": "par",
     "Description": "Parkour hřiště s překážkami pro začátečníky",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "par_kartouzska"
   },
   {
     "Name": "Basketbal Červinkova",
     "Latitude": 49.225107,
     "Longitude": 16.581453,
     "Sport": "bas",
-    "Description": "Hřiště z 6 košema na basket 3v3",
-    "Image1": "",
-    "Image2": ""
+    "Description": "Hřiště s 6 košema na basket 3v3",
+    "Opening": "",
+    "Folder": "bas_cervinkova"
   },
   {
     "Name": "Basketbal/kluziště Vodová",
@@ -77,17 +86,17 @@
     "Longitude": 16.585243,
     "Sport": "bf",
     "Description": "Basketbalové hřiště s 4 košema a 2 brankami na florbal a hazenou",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bf_vodova"
   },
   {
-    "Name": "Futsál Opička",
+    "Name": "Basket/futsal Opička",
     "Latitude": 49.229136,
     "Longitude": 16.583922,
-    "Sport": "foo",
-    "Description": "Futsalové hřiště s",
-    "Image1": "",
-    "Image2": ""
+    "Sport": "bf",
+    "Description": "Multifunkční hřiště",
+    "Opening": "",
+    "Folder": "bf_opicka"
   },
   {
     "Name": "Basket/futsal Herčíkova",
@@ -95,8 +104,8 @@
     "Longitude": 16.583964,
     "Sport": "bf",
     "Description": "Hřište na basket a futsal s umělým povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bf_kolecko"
   },
   {
     "Name": "Basket Mánesova",
@@ -104,8 +113,8 @@
     "Longitude": 16.586736,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s betonovým povrchem a bez sítí",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bas_ctverec"
   },
   {
     "Name": "Boulder Palackého Vrch",
@@ -113,8 +122,8 @@
     "Longitude": 16.571494,
     "Sport": "bou",
     "Description": "Park na bouldering",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Futsálové hřiště Palackého koleje",
@@ -122,8 +131,8 @@
     "Longitude": 16.571077,
     "Sport": "foo",
     "Description": "Futsalové hřiště s pískovým povrchem a 2 brankami",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Futsal/basket hřiště Decathlon Ivanovice",
@@ -131,8 +140,8 @@
     "Longitude": 16.580411,
     "Sport": "bf",
     "Description": "Futsal/basket hřište s umělým povrchem - možnost půjčení míče v Decathonu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket Blažkova",
@@ -140,8 +149,8 @@
     "Longitude": 16.626129,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s menším oválem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket/futsal Čertova rokle",
@@ -149,8 +158,8 @@
     "Longitude": 16.626904,
     "Sport": "bf",
     "Description": "Futsal/basket hřiště s umělým travnatým povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basketbal Taneční konzervatoř",
@@ -158,8 +167,8 @@
     "Longitude": 16.625817,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s horším povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basketbal Slavíčkova",
@@ -167,8 +176,8 @@
     "Longitude": 16.619646,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s 4 košema v horším stavu a betonovým povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basketbal zastávka Heleny Malířové",
@@ -176,8 +185,8 @@
     "Longitude": 16.629669,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s asfaltovým povrchem a 1 košem idealní pro hru 3v3",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket/futsál na Vyhlídce",
@@ -185,8 +194,8 @@
     "Longitude": 16.633495,
     "Sport": "bf",
     "Description": "Basket/futsal hřiště s umělým povrchem a zábranami",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Workout hřiště na Vyhlídce",
@@ -194,8 +203,8 @@
     "Longitude": 16.633269,
     "Sport": "wor",
     "Description": "workout hřiště ve skvělém stavu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Parkour Arbesova",
@@ -203,8 +212,8 @@
     "Longitude": 16.631886,
     "Sport": "par",
     "Description": "Parkour hřiště s těžšíma překážkama",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket Štefánikova",
@@ -212,8 +221,8 @@
     "Longitude": 16.62861,
     "Sport": "bas",
     "Description": "Basketbalové hřiště bez zábran",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket/futsal Tomanova",
@@ -221,8 +230,8 @@
     "Longitude": 16.62111,
     "Sport": "bf",
     "Description": "Basket/futsál hřiště s umělým povrchem",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Workout Lužánky",
@@ -230,26 +239,17 @@
     "Longitude": 16.60755,
     "Sport": "wor",
     "Description": "Workout v dobrém stavu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "wor_luzanky1"
   },
   {
-    "Name": "Basket Vlněná",
-    "Latitude": 49.189854,
-    "Longitude": 16.618152,
-    "Sport": "bas",
-    "Description": "Basketbalové hřiště s 1 košem ideální pro hru 3v3",
-    "Image1": "",
-    "Image2": ""
-  },
-  {
-    "Name": "Basket/futsál Zvonařka",
+    "Name": "Basket/futsál Čechyňská",
     "Latitude": 49.188079,
     "Longitude": 16.620454,
     "Sport": "bf",
     "Description": "Basket/futsal hřiště s betonovým povrchem a vysokým ohraničením",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bf_cechynska"
   },
   {
     "Name": "Basket/futsál Nové sady",
@@ -257,8 +257,8 @@
     "Longitude": 16.603186,
     "Sport": "bf",
     "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "bf_kridlovicka"
   },
   {
     "Name": "Basket/volleybal hřiště Zahradnická",
@@ -266,8 +266,8 @@
     "Longitude": 16.597369,
     "Sport": "bfv",
     "Description": "Multifunkční hřiště s 1 košem na basket a tyčema pro umístění sítě pro volejbal",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket/futsál Celní",
@@ -275,8 +275,8 @@
     "Longitude": 16.594173,
     "Sport": "bf",
     "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Workout Lužánecká",
@@ -284,8 +284,8 @@
     "Longitude": 16.612072,
     "Sport": "wor",
     "Description": "Workut hřiště ve skvělém stavu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "wor_luzanky2"
   },
   {
     "Name": "Inline park Lužánky",
@@ -293,8 +293,8 @@
     "Longitude": 16.612319,
     "Sport": "ska",
     "Description": "",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "ska_luzanky"
   },
   {
     "Name": "Volejbalové kurty Lužánky",
@@ -302,8 +302,8 @@
     "Longitude": 16.612604,
     "Sport": "vol",
     "Description": "Volejbalové kurty - Potřeba rezervace",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Workout Herčíkova",
@@ -311,17 +311,17 @@
     "Longitude": 16.583811,
     "Sport": "wor",
     "Description": "Workout hřiště ve skvělém stavu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
   },
   {
     "Name": "Basket park Božetěchova",
     "Latitude": 49.228446,
     "Longitude": 16.596763,
     "Sport": "bas",
-    "Description": "Basketbalové hřiště s velkým ohraničením",
-    "Image1": "",
-    "Image2": ""
+    "Description": "Basketbalové hřiště s vysokým ohraničením",
+    "Opening": "",
+    "Folder": "bas_bozetechova"
   },
   {
     "Name": "Workout park Božetěchova",
@@ -329,8 +329,8 @@
     "Longitude": 16.596365,
     "Sport": "wor",
     "Description": "Workout hřiště ve skvělém stavu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": "wor_bozetechova"
   },
   {
     "Name": "Stolní tenis Nová Zbrojovka",
@@ -338,7 +338,43 @@
     "Longitude": 16.635032,
     "Sport": "pin",
     "Description": "Stůl na ping pong ve skvělém stavu",
-    "Image1": "",
-    "Image2": ""
+    "Opening": "",
+    "Folder": ""
+  },
+  {
+    "Name": "Hřiště Zvonařka",
+    "Latitude": 49.188057,
+    "Longitude": 16.620467,
+    "Sport": "bf",
+    "Description": "",
+    "Opening": "",
+    "Folder": ""
+  },
+  {
+    "Name": "Hřiště Mendlovo náměstí",
+    "Latitude": 49.189351,
+    "Longitude": 16.591148,
+    "Sport": "bas",
+    "Description": "",
+    "Opening": "",
+    "Folder": ""
+  },
+  {
+    "Name": "Rybářská",
+    "Latitude": 49.186456,
+    "Longitude": 16.586787,
+    "Sport": "bf",
+    "Description": "",
+    "Opening": "",
+    "Folder": ""
+  },
+  {
+    "Name": "Luční",
+    "Latitude": 49.215097,
+    "Longitude": 16.572477,
+    "Sport": "bf",
+    "Description": "",
+    "Opening": "",
+    "Folder": ""
   }
 ]

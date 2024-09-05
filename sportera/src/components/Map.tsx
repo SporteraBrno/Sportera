@@ -24,8 +24,8 @@ interface Place {
   Longitude: number;
   Sport: string;
   Description: string;
-  Image1: string;
-  Image2: string;
+  Opening: string;
+  Folder: string;
 }
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
@@ -67,6 +67,45 @@ const Map: React.FC = React.memo(() => {
     return icon;
   }, []);
   
+  const loadImagesForLightbox = useCallback((folder: string) => {
+    const images: string[] = [];
+    let i = 1;
+    
+    const checkImage = (index: number) => {
+      const extensions = ['jpg', 'jpeg'];
+      let extensionIndex = 0;
+  
+      const tryNextExtension = () => {
+        if (extensionIndex < extensions.length) {
+          const ext = extensions[extensionIndex];
+          fetch(`/images/places/${folder}/${folder}${index}.${ext}`)
+            .then(response => {
+              if (response.ok) {
+                images.push(`/images/places/${folder}/${folder}${index}.${ext}`);
+                checkImage(index + 1);
+              } else {
+                extensionIndex++;
+                tryNextExtension();
+              }
+            })
+            .catch(() => {
+              extensionIndex++;
+              tryNextExtension();
+            });
+        } else if (images.length > 0) {
+          setLightboxImages(images);
+          setLightboxIndex(0);
+        } else {
+          console.log("No images found for this location");
+        }
+      };
+  
+      tryNextExtension();
+    };
+  
+    checkImage(i);
+  }, []);
+
   const createCustomCallout = useCallback((annotation: any) => {
     const div = document.createElement("div");
     div.className = "custom-callout";
@@ -80,34 +119,65 @@ const Map: React.FC = React.memo(() => {
     title.className = "callout-title selectable";
     title.textContent = annotation.title;
     contentDiv.appendChild(title);
-
+  
     const description = document.createElement("p");
     description.className = "callout-description selectable";
     description.textContent = annotation.subtitle;
     contentDiv.appendChild(description);
-
+  
     const openingHours = document.createElement("p");
     openingHours.className = "callout-opening-hours";
-    openingHours.textContent = "Otevřeno: Coming soon";
+    openingHours.textContent = annotation.data.opening || "Otevřeno: Brzy přidáme";
     contentDiv.appendChild(openingHours);
-
+  
     div.appendChild(contentDiv);
-
-    if (annotation.data.image1) {
-      const image = document.createElement("img");
-      image.src = annotation.data.image1;
-      image.className = "callout-image";
-      image.alt = `Image of ${annotation.title}`;
-      image.addEventListener('click', () => {
-        const images = [annotation.data.image1, annotation.data.image2].filter(Boolean);
-        setLightboxImages(images);
-        setLightboxIndex(0);
+  
+    if (annotation.data.folder) {
+      const checkImageExists = (callback: (exists: boolean, src?: string) => void) => {
+        const extensions = ['jpg', 'jpeg'];
+        let extensionIndex = 0;
+  
+        const tryNextExtension = () => {
+          if (extensionIndex < extensions.length) {
+            const ext = extensions[extensionIndex];
+            const src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.${ext}`;
+            fetch(src)
+              .then(response => {
+                if (response.ok) {
+                  callback(true, src);
+                } else {
+                  extensionIndex++;
+                  tryNextExtension();
+                }
+              })
+              .catch(() => {
+                extensionIndex++;
+                tryNextExtension();
+              });
+          } else {
+            callback(false);
+          }
+        };
+  
+        tryNextExtension();
+      };
+  
+      checkImageExists((exists, src) => {
+        if (exists && src) {
+          const image = document.createElement("img");
+          image.className = "callout-image";
+          image.alt = `Image of ${annotation.title}`;
+          image.src = src;
+          image.addEventListener('click', () => {
+            loadImagesForLightbox(annotation.data.folder);
+          });
+          div.appendChild(image);
+        }
       });
-      div.appendChild(image);
     }
   
     return div;
-  }, []);
+  }, [loadImagesForLightbox]);
 
   const toggleSport = useCallback((sport: string) => {
     setSelectedSports(prev => {
@@ -180,8 +250,8 @@ const Map: React.FC = React.memo(() => {
             accessibilityLabel: `${place.Sport} location: ${place.Name}`,
             data: { 
               sport: place.Sport,
-              image1: place.Image1,
-              image2: place.Image2
+              folder: place.Folder,
+              opening: place.Opening
             },
           }
         );

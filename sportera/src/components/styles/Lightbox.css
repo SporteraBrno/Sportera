@@ -69,3 +69,13 @@
     max-height: 100%;
     object-fit: contain;
   }
+  
+  .loading-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+  }
