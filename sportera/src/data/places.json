@@ -312,7 +312,7 @@
     "Sport": "wor",
     "Description": "Workout hřiště ve skvělém stavu",
     "Opening": "",
-    "Folder": ""
+    "Folder": "wor_kolecko"
   },
   {
     "Name": "Basket park Božetěchova",
@@ -338,15 +338,6 @@
     "Longitude": 16.635032,
     "Sport": "pin",
     "Description": "Stůl na ping pong ve skvělém stavu",
-    "Opening": "",
-    "Folder": ""
-  },
-  {
-    "Name": "Hřiště Zvonařka",
-    "Latitude": 49.188057,
-    "Longitude": 16.620467,
-    "Sport": "bf",
-    "Description": "",
     "Opening": "",
     "Folder": ""
   },

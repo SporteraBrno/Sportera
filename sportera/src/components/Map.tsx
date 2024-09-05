@@ -72,35 +72,27 @@ const Map: React.FC = React.memo(() => {
     let i = 1;
     
     const checkImage = (index: number) => {
-      const extensions = ['jpg', 'jpeg'];
-      let extensionIndex = 0;
-  
-      const tryNextExtension = () => {
-        if (extensionIndex < extensions.length) {
-          const ext = extensions[extensionIndex];
-          fetch(`/images/places/${folder}/${folder}${index}.${ext}`)
-            .then(response => {
-              if (response.ok) {
-                images.push(`/images/places/${folder}/${folder}${index}.${ext}`);
-                checkImage(index + 1);
-              } else {
-                extensionIndex++;
-                tryNextExtension();
-              }
-            })
-            .catch(() => {
-              extensionIndex++;
-              tryNextExtension();
-            });
-        } else if (images.length > 0) {
-          setLightboxImages(images);
-          setLightboxIndex(0);
-        } else {
-          console.log("No images found for this location");
-        }
+      const checkExtension = (ext: string) => {
+        const img = new Image();
+        img.src = `/images/places/${folder}/${folder}${index}.${ext}`;
+        img.onload = () => {
+          images.push(img.src);
+          checkImage(index + 1);
+        };
+        img.onerror = () => {
+          if (ext === 'jpg') {
+            checkExtension('jpeg');
+          } else if (images.length > 0) {
+            setLightboxImages(images);
+            setLightboxIndex(0);
+          } else {
+            // No images found, don't open the lightbox
+            console.log("No images found for this location");
+          }
+        };
       };
   
-      tryNextExtension();
+      checkExtension('jpg');
     };
   
     checkImage(i);
@@ -133,46 +125,25 @@ const Map: React.FC = React.memo(() => {
     div.appendChild(contentDiv);
   
     if (annotation.data.folder) {
-      const checkImageExists = (callback: (exists: boolean, src?: string) => void) => {
-        const extensions = ['jpg', 'jpeg'];
-        let extensionIndex = 0;
-  
-        const tryNextExtension = () => {
-          if (extensionIndex < extensions.length) {
-            const ext = extensions[extensionIndex];
-            const src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.${ext}`;
-            fetch(src)
-              .then(response => {
-                if (response.ok) {
-                  callback(true, src);
-                } else {
-                  extensionIndex++;
-                  tryNextExtension();
-                }
-              })
-              .catch(() => {
-                extensionIndex++;
-                tryNextExtension();
-              });
-          } else {
-            callback(false);
-          }
-        };
-  
-        tryNextExtension();
+      const checkImageExists = (callback: (exists: boolean) => void) => {
+        const img = new Image();
+        img.onload = () => callback(true);
+        img.onerror = () => callback(false);
+        img.src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.jpg`;
       };
   
-      checkImageExists((exists, src) => {
-        if (exists && src) {
+      checkImageExists((exists) => {
+        if (exists) {
           const image = document.createElement("img");
           image.className = "callout-image";
           image.alt = `Image of ${annotation.title}`;
-          image.src = src;
+          image.src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.jpg`;
           image.addEventListener('click', () => {
             loadImagesForLightbox(annotation.data.folder);
           });
           div.appendChild(image);
         }
+        // If the image doesn't exist, we don't add anything
       });
     }
   
