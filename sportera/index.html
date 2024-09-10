@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -11,39 +11,95 @@
     <meta name="apple-mobile-web-app-title" content="Sportera">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Sportera vám pomáhá sportovat kdekoliv a kdykoliv. Objevujte sportoviště v Brně. Basketbal, fotbal, gym,...">
+    <meta name="description" content="Sportera vám pomáhá sportovat kdekoliv a kdykoliv. Objevujte sportoviště v Brně na basketbal, fotbal, workout,...">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sportera">
     <meta name="twitter:description" content="Sportera vám pomáhá sportovat kdekoliv a kdykoliv">
     <meta name="twitter:image" content="https://sportera.cz/images/og-image.jpg">
-    <meta property="og:title" content="Sportera - Sportujte kdekoliv a kdykoliv">
+    <meta property="og:title" content="Sportera: Víc než jen mapa">
     <meta property="og:description" content="Sportera vám pomáhá sportovat kdekoliv a kdykoliv">
     <meta property="og:image" content="https://sportera.cz/images/og-image.jpg">
     <meta property="og:url" content="https://sportera.cz">
-    <meta name="keywords" content="sport, gym, sportera, sportera.cz, Czech Republic, Basketbal, fitness, Brno">
+    <meta name="keywords" content="sport, gym, sportera, sportera.cz, Czech Republic, Basketbal, fitness, Brno, sportovní mapa, sportovní zařízení, hřiště v Brně, veřejná sportoviště">
     <title>Sportera: Víc než jen mapa</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": ["Organization", "WebSite"],
-        "name": "Sportera",
-        "alternateName": "Sportera.cz",
+        "@type": ["WebApplication", "LocalBusiness"],
+        "name": "Sportera Brno",
+        "alternateName": "Sportera Brno",
         "description": "Sportera vám pomáhá sportovat kdekoliv a kdykoliv. Objevujte sportoviště v Brně.",
-        "url": "https://sportera.cz",
+        "url": "https://Sportera.cz",
         "logo": "https://sportera.cz/images/logo.png",
         "sameAs": [
           "https://www.instagram.com/sporterabrno",
           "https://www.tiktok.com/@sporterabrno"
         ],
+        "address": {
+    "@type": "PostalAddress",
+    "streetAddress": " Kolejní 2906/4",
+    "addressLocality": "Brno",
+    "postalCode": "60200",
+    "addressCountry": "CZ"
+        },
         "areaServed": {
           "@type": "City",
           "name": "Brno"
-        }
+        },
+        "geographicArea": {
+          "@type": "GeoShape",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CZ",
+            "addressRegion": "Jihomoravský kraj",
+            "addressLocality": "Brno"
+          },
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.1951,
+            "longitude": 16.6068
+          },
+          "box": "49.1371,16.4696 49.2746,16.7164"
+        },
+        "applicationCategory": "SportsAndFitness",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CZK"
+        },
+        "email": "virtigo.sportera@gmail.com",
+        "foundingDate": "2024-01-01",
+        "founder": {
+          "@type": "Organization",
+          "name": "Virtigo"
+        },
+        "slogan": "Sportera vám pomáhá sportovat kdekoliv a kdykoliv.",
+        "featureList": "Mapa sportovišť, Informace o veřejných sportovních zařízeních, Filtrování podle typu sportu",
+        "screenshot": "https://sportera.cz/images/og-image.jpg",
+        "softwareVersion": "1.0",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Sports enthusiasts in Brno"
+        },
+        "availableOnDevice": [
+          "Desktop",
+          "Laptop",
+          "Smartphone",
+          "Tablet"
+        ],
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "maintainer": {
+          "@type": "Organization",
+          "name": "Sportera",
+          "email": "virtigo.sportera@gmail.com"
+        },
+        "inLanguage": "cs"
       }
-      </script>
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" aria-label="Sportera application root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
