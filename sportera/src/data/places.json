@@ -1,14 +1,5 @@
 [
   {
-    "Name": "Newpark gym",
-    "Latitude": 49.1812748,
-    "Longitude": 16.6027828,
-    "Sport": "gym",
-    "Description": "Prostorná posilovna se zónami pro kardio, strongman i crossfit.",
-    "Opening": "",
-    "Folder": "gym_newpark"
-  },
-  {
     "Name": "Vlněná basket",
     "Latitude": 49.18972,
     "Longitude": 16.61824,

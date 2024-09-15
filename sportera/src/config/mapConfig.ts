@@ -3,8 +3,8 @@ export const mapKitConfig = {
   initialRegion: {
     latitude: 49.2051,
     longitude: 16.6068,
-    latitudeDelta: 0.06,
-    longitudeDelta: 0.06
+    latitudeDelta: 0.10,
+    longitudeDelta: 0.10
   },
   mapSettings: {
     showsZoomControl: false,

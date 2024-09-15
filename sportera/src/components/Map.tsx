@@ -217,7 +217,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
             title: place.Name,
             subtitle: place.Description,
             url: { 1: markerIcon },
-            size: { width: 30, height: 30 },
+            size: { width: 26, height: 26 },
             anchorOffset: new window.DOMPoint(0, -15),
             callout: {
               calloutElementForAnnotation: createCustomCallout,

@@ -8,7 +8,7 @@ interface SportFiltersProps {
 }
 
 const sportIcons: { [key: string]: string } = {
-  gym: markers.gymMarker,
+  //gym: markers.gymMarker,
   bas: markers.basketballMarker,
   vol: markers.volleyballMarker,
   bou: markers.boulderMarker,
