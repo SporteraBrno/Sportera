@@ -30,7 +30,11 @@ interface Place {
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
 
-const Map: React.FC = React.memo(() => {
+interface MapProps {
+  onFilterToggle: () => void;
+}
+
+const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const annotationsRef = useRef<any[]>([]);
@@ -274,7 +278,8 @@ const Map: React.FC = React.memo(() => {
 
   const toggleFilters = useCallback(() => {
     setIsFiltersVisible(prev => !prev);
-  }, []);
+    onFilterToggle(); // Call the prop function when filters are toggled
+  }, [onFilterToggle]);
 
   return (
     <div className="map-container">

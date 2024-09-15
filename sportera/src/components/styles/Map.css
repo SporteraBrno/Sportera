@@ -23,3 +23,7 @@
   text-align: center;
   white-space: nowrap;
 }
+
+.map .mk-annotation-view img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}

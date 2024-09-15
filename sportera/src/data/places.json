@@ -252,7 +252,7 @@
     "Folder": "bf_cechynska"
   },
   {
-    "Name": "Basket/futsál Nové sady",
+    "Name": "Basket/futsál Křídlovická",
     "Latitude": 49.18654,
     "Longitude": 16.603186,
     "Sport": "bf",
@@ -342,13 +342,13 @@
     "Folder": ""
   },
   {
-    "Name": "Hřiště Mendlovo náměstí",
+    "Name": "Hřiště u Mendlova náměstí",
     "Latitude": 49.189351,
     "Longitude": 16.591148,
     "Sport": "bas",
     "Description": "",
     "Opening": "",
-    "Folder": ""
+    "Folder": "bas_mendlak"
   },
   {
     "Name": "Rybářská",
@@ -357,7 +357,16 @@
     "Sport": "bf",
     "Description": "",
     "Opening": "",
-    "Folder": ""
+    "Folder": "bf_rybarska"
+  },
+  {
+    "Name": "Luční",
+    "Latitude": 49.215097,
+    "Longitude": 16.572477,
+    "Sport": "bf",
+    "Description": "Streetballové hřiště se čtyřmi koši a brankami na futsal",
+    "Opening": "",
+    "Folder": "bf_lucni"
   },
   {
     "Name": "Opička",
@@ -369,12 +378,111 @@
     "Folder": "pin_opicka"
   },
   {
-    "Name": "Luční",
-    "Latitude": 49.215097,
-    "Longitude": 16.572477,
+    "Name": "Mendlák",
+    "Latitude": 49.193545,
+    "Longitude": 16.593765,
+    "Sport": "ska",
+    "Description": "Skatepark idealní pro začátčníky i pokročile",
+    "Opening": "24/7",
+    "Folder": "ska_mendlak"
+  },
+  {
+    "Name": "Hřiště Příkrá",
+    "Latitude": 49.220401,
+    "Longitude": 16.566541,
     "Sport": "bf",
-    "Description": "Streetballové hřiště se čtyřmi koši a brankami na futsal",
-    "Opening": "6:00 - 22:00",
-    "Folder": "bf_lucni"
+    "Description": "",
+    "Opening": "",
+    "Folder": "bf_prikra"
+  },
+  {
+    "Name": "Stolní tenis Příkrá",
+    "Latitude": 49.220581,
+    "Longitude": 16.566584,
+    "Sport": "pin",
+    "Description": "",
+    "Opening": "",
+    "Folder": "pin_prikra"
+  },
+  {
+    "Name": "Fotbal Mendlák",
+    "Latitude": 49.192985,
+    "Longitude": 16.593469,
+    "Sport": "foo",
+    "Description": "Hřiště na fotbal s menšími brankami",
+    "Opening": "",
+    "Folder": "foo_mendlak"
+  },
+  {
+    "Name": "Workout Mendlák",
+    "Latitude": 49.193356,
+    "Longitude": 16.593376,
+    "Sport": "Wor",
+    "Description": "",
+    "Opening": "",
+    "Folder": "wor_mendlak"
+  },
+  {
+    "Name": "Street Švermova",
+    "Latitude": 49.166986,
+    "Longitude": 16.569734,
+    "Sport": "bas",
+    "Description": "Jeden koš, ideální na streetball nebo HORSE",
+    "Opening": "",
+    "Folder": "bas_svermova"
+  },
+  {
+    "Name": "Skatepark Bohunice",
+    "Latitude": 49.1672,
+    "Longitude": 16.568928,
+    "Sport": "ska",
+    "Description": "Street + bowl,na tohle už musíš být cool aby si tady jezdil",
+    "Opening": "",
+    "Folder": "ska_bohunice1"
+  },
+  {
+    "Name": "Basket Osová",
+    "Latitude": 49.1677,
+    "Longitude": 16.567683,
+    "Sport": "bas",
+    "Description": "Hřiště na basketbal",
+    "Opening": "",
+    "Folder": "bas_osova"
+  },
+  {
+    "Name": "FunPark Bohunice",
+    "Latitude": 49.167788,
+    "Longitude": 16.567543,
+    "Sport": "ska",
+    "Description": "Malý FunPark pro skateboard",
+    "Opening": "",
+    "Folder": "ska_bohunice2"
+  },
+  {
+    "Name": "Královopolská",
+    "Latitude": 49.2192443,
+    "Longitude": 16.577536,
+    "Sport": "wor",
+    "Description": "Workout hřiště od cvicimeworkout.cz",
+    "Opening": "",
+    "Folder": "wor_kralovopolska"
+  },
+  {
+    "Name": "Vychodilova",
+    "Latitude": 49.2206717,
+    "Longitude": 16.570907,
+    "Sport": "bf",
+    "Description": "",
+    "Opening": "",
+    "Folder": "bf_vychodilova"
+  },
+  {
+    "Name": "Luční",
+    "Latitude": 49.214799,
+    "Longitude": 16.572386,
+    "Sport": "pin",
+    "Description": "Stůl na ping-pong",
+    "Opening": "",
+    "Folder": "pin_lucni"
   }
 ]
