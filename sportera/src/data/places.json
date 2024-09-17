@@ -1,11 +1,20 @@
 [
   {
+    "Name": "Hřiště pod kraví horou",
+    "Latitude": 49.203069,
+    "Longitude": 16.58204,
+    "Sport": "ten",
+    "Description": "Hřiště na tenis",
+    "Opening": "otevřeno 24/7",
+    "Folder": ""
+  },
+  {
     "Name": "Vlněná basket",
     "Latitude": 49.18972,
     "Longitude": 16.61824,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s 1 košem ideální pro hru 3v3",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "bas_vlnena"
   },
   {
@@ -14,16 +23,16 @@
     "Longitude": 16.626407,
     "Sport": "foo",
     "Description": "Fotbalové hřiště s menšími brankami",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
-    "Name": "Volejbalové a nohejbalové hřiště",
-    "Latitude": 49.202912,
-    "Longitude": 16.581949,
+    "Name": "Hřiště pod kraví horou",
+    "Latitude": 49.202774,
+    "Longitude": 16.581766,
     "Sport": "vol",
-    "Description": "Volejbalové, nohejbalové a tenisové hřiště s umělým travnatým povrchem",
-    "Opening": "",
+    "Description": "Hřiště na volejbal a nohejbal",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -31,8 +40,8 @@
     "Latitude": 49.203341,
     "Longitude": 16.58505,
     "Sport": "bf",
-    "Description": "Basketbalové hřiště s brankami na futsál",
-    "Opening": "",
+    "Description": "Basketbalové hřiště s brankami na futsal",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -41,25 +50,25 @@
     "Longitude": 16.592105,
     "Sport": "bf",
     "Description": "Basketbalový koš pro 3v3",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "bf_klusackova"
   },
   {
     "Name": "Basketbal Kartouzská",
-    "Latitude": 49.215257,
-    "Longitude": 16.597708,
+    "Latitude": 49.215151,
+    "Longitude": 16.597836,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s umělým povrchem",
-    "Opening": "",
+    "Opening": "otevřeno 8:00 - 21:00",
     "Folder": "bas_kartouzska"
   },
   {
     "Name": "Parkour hřiště Kartouzská",
-    "Latitude": 49.215555,
-    "Longitude": 16.597235,
+    "Latitude": 49.215587,
+    "Longitude": 16.597008,
     "Sport": "par",
     "Description": "Parkour hřiště s překážkami pro začátečníky",
-    "Opening": "",
+    "Opening": "otevřeno 8:00 - 21:00",
     "Folder": "par_kartouzska"
   },
   {
@@ -68,7 +77,7 @@
     "Longitude": 16.581453,
     "Sport": "bas",
     "Description": "Hřiště s 6 košema na basket 3v3",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "bas_cervinkova"
   },
   {
@@ -77,25 +86,25 @@
     "Longitude": 16.585243,
     "Sport": "bf",
     "Description": "Basketbalové hřiště s 4 košema a 2 brankami na florbal a hazenou",
-    "Opening": "",
+    "Opening": "15:00 - 17:00, 18:00 - 20:00",
     "Folder": "bf_vodova"
   },
   {
-    "Name": "Basket/futsal Opička",
-    "Latitude": 49.229136,
-    "Longitude": 16.583922,
+    "Name": "Opička",
+    "Latitude": 49.229216,
+    "Longitude": 16.584055,
     "Sport": "bf",
     "Description": "Multifunkční hřiště",
-    "Opening": "",
+    "Opening": "otevřeno 8:00 - 20:00",
     "Folder": "bf_opicka"
   },
   {
-    "Name": "Basket/futsal Herčíkova",
-    "Latitude": 49.231386,
-    "Longitude": 16.583964,
+    "Name": "Sportovní hřiště Kolečko",
+    "Latitude": 49.231581,
+    "Longitude": 16.583999,
     "Sport": "bf",
     "Description": "Hřište na basket a futsal s umělým povrchem",
-    "Opening": "",
+    "Opening": "otevřeno 8.00 - 21.00",
     "Folder": "bf_kolecko"
   },
   {
@@ -104,7 +113,7 @@
     "Longitude": 16.586736,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s betonovým povrchem a bez sítí",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "bas_ctverec"
   },
   {
@@ -113,7 +122,7 @@
     "Longitude": 16.571494,
     "Sport": "bou",
     "Description": "Park na bouldering",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -122,7 +131,7 @@
     "Longitude": 16.571077,
     "Sport": "foo",
     "Description": "Futsalové hřiště s pískovým povrchem a 2 brankami",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -131,7 +140,7 @@
     "Longitude": 16.580411,
     "Sport": "bf",
     "Description": "Futsal/basket hřište s umělým povrchem - možnost půjčení míče v Decathonu",
-    "Opening": "",
+    "Opening": "otevřeno 9:00 - 21:00",
     "Folder": ""
   },
   {
@@ -140,7 +149,7 @@
     "Longitude": 16.626129,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s menším oválem",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -149,7 +158,7 @@
     "Longitude": 16.626904,
     "Sport": "bf",
     "Description": "Futsal/basket hřiště s umělým travnatým povrchem",
-    "Opening": "",
+    "Opening": "-",
     "Folder": ""
   },
   {
@@ -158,7 +167,7 @@
     "Longitude": 16.625817,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s horším povrchem",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -167,7 +176,7 @@
     "Longitude": 16.619646,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s 4 košema v horším stavu a betonovým povrchem",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -176,7 +185,7 @@
     "Longitude": 16.629669,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s asfaltovým povrchem a 1 košem idealní pro hru 3v3",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -185,7 +194,7 @@
     "Longitude": 16.633495,
     "Sport": "bf",
     "Description": "Basket/futsal hřiště s umělým povrchem a zábranami",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -194,7 +203,7 @@
     "Longitude": 16.633269,
     "Sport": "wor",
     "Description": "workout hřiště ve skvělém stavu",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -203,7 +212,7 @@
     "Longitude": 16.631886,
     "Sport": "par",
     "Description": "Parkour hřiště s těžšíma překážkama",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -212,7 +221,7 @@
     "Longitude": 16.62861,
     "Sport": "bas",
     "Description": "Basketbalové hřiště bez zábran",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -221,7 +230,7 @@
     "Longitude": 16.62111,
     "Sport": "bf",
     "Description": "Basket/futsál hřiště s umělým povrchem",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -230,7 +239,7 @@
     "Longitude": 16.60755,
     "Sport": "wor",
     "Description": "Workout v dobrém stavu",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "wor_luzanky1"
   },
   {
@@ -239,7 +248,7 @@
     "Longitude": 16.620454,
     "Sport": "bf",
     "Description": "Basket/futsal hřiště s betonovým povrchem a vysokým ohraničením",
-    "Opening": "",
+    "Opening": "otevřeno 8.00 - 20:00",
     "Folder": "bf_cechynska"
   },
   {
@@ -248,7 +257,7 @@
     "Longitude": 16.603186,
     "Sport": "bf",
     "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "bf_kridlovicka"
   },
   {
@@ -257,7 +266,7 @@
     "Longitude": 16.597369,
     "Sport": "bfv",
     "Description": "Multifunkční hřiště s 1 košem na basket a tyčema pro umístění sítě pro volejbal",
-    "Opening": "",
+    "Opening": "otevřeno 6:00 - 20:00",
     "Folder": ""
   },
   {
@@ -266,61 +275,61 @@
     "Longitude": 16.594173,
     "Sport": "bf",
     "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
     "Name": "Workout Lužánecká",
-    "Latitude": 49.205097,
-    "Longitude": 16.612072,
+    "Latitude": 49.205177,
+    "Longitude": 16.611875,
     "Sport": "wor",
     "Description": "Workut hřiště ve skvělém stavu",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "wor_luzanky2"
   },
   {
     "Name": "Inline park Lužánky",
-    "Latitude": 49.205139,
-    "Longitude": 16.612319,
+    "Latitude": 49.205192,
+    "Longitude": 16.612648,
     "Sport": "ska",
     "Description": "",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "ska_luzanky"
   },
   {
-    "Name": "Volejbalové kurty Lužánky",
-    "Latitude": 49.205405,
-    "Longitude": 16.612604,
+    "Name": "Volej Buf",
+    "Latitude": 49.206224,
+    "Longitude": 16.612338,
     "Sport": "vol",
     "Description": "Volejbalové kurty - Potřeba rezervace",
-    "Opening": "",
+    "Opening": "otevřeno 14-22",
     "Folder": ""
   },
   {
-    "Name": "Workout Herčíkova",
-    "Latitude": 49.231264,
-    "Longitude": 16.583811,
+    "Name": "Workout Kolečko",
+    "Latitude": 49.231152,
+    "Longitude": 16.583831,
     "Sport": "wor",
     "Description": "Workout hřiště ve skvělém stavu",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "wor_kolecko"
   },
   {
     "Name": "Basket park Božetěchova",
-    "Latitude": 49.228446,
-    "Longitude": 16.596763,
+    "Latitude": 49.23162,
+    "Longitude": 16.584019,
     "Sport": "bas",
     "Description": "Basketbalové hřiště s vysokým ohraničením",
-    "Opening": "",
+    "Opening": "otevřeno 6:00 - 22:00",
     "Folder": "bas_bozetechova"
   },
   {
     "Name": "Workout park Božetěchova",
-    "Latitude": 49.228348,
-    "Longitude": 16.596365,
+    "Latitude": 49.228398,
+    "Longitude": 16.596113,
     "Sport": "wor",
     "Description": "Workout hřiště ve skvělém stavu",
-    "Opening": "",
+    "Opening": "otevřeno 8:00 - 22:00",
     "Folder": "wor_bozetechova"
   },
   {
@@ -329,7 +338,7 @@
     "Longitude": 16.635032,
     "Sport": "pin",
     "Description": "Stůl na ping pong ve skvělém stavu",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": ""
   },
   {
@@ -347,40 +356,40 @@
     "Longitude": 16.586787,
     "Sport": "bf",
     "Description": "",
-    "Opening": "",
+    "Opening": "otevřeno 8:00 - 22:00",
     "Folder": "bf_rybarska"
   },
   {
-    "Name": "Luční",
-    "Latitude": 49.215097,
+    "Name": "Streetballové hřiště Luční",
+    "Latitude": 49.215281,
     "Longitude": 16.572477,
     "Sport": "bf",
     "Description": "Streetballové hřiště se čtyřmi koši a brankami na futsal",
-    "Opening": "",
+    "Opening": "otevřeno 6:00 - 22:00",
     "Folder": "bf_lucni"
   },
   {
     "Name": "Opička",
-    "Latitude": 49.229165,
-    "Longitude": 16.583521,
+    "Latitude": 49.229254,
+    "Longitude": 16.583428,
     "Sport": "pin",
     "Description": "Stůl na pingpong",
-    "Opening": "",
+    "Opening": "otevřeno 24/7",
     "Folder": "pin_opicka"
   },
   {
     "Name": "Mendlák",
-    "Latitude": 49.193545,
-    "Longitude": 16.593765,
+    "Latitude": 49.193911,
+    "Longitude": 16.593978,
     "Sport": "ska",
     "Description": "Skatepark idealní pro začátčníky i pokročile",
-    "Opening": "24/7",
+    "Opening": "otevřeno 24/7",
     "Folder": "ska_mendlak"
   },
   {
     "Name": "Hřiště Příkrá",
-    "Latitude": 49.220401,
-    "Longitude": 16.566541,
+    "Latitude": 49.220306,
+    "Longitude": 16.566565,
     "Sport": "bf",
     "Description": "",
     "Opening": "",
@@ -388,8 +397,8 @@
   },
   {
     "Name": "Stolní tenis Příkrá",
-    "Latitude": 49.220581,
-    "Longitude": 16.566584,
+    "Latitude": 49.22071,
+    "Longitude": 16.56666,
     "Sport": "pin",
     "Description": "",
     "Opening": "",
@@ -397,8 +406,8 @@
   },
   {
     "Name": "Fotbal Mendlák",
-    "Latitude": 49.192985,
-    "Longitude": 16.593469,
+    "Latitude": 49.192889,
+    "Longitude": 16.593567,
     "Sport": "foo",
     "Description": "Hřiště na fotbal s menšími brankami",
     "Opening": "",
@@ -408,15 +417,15 @@
     "Name": "Workout Mendlák",
     "Latitude": 49.193356,
     "Longitude": 16.593376,
-    "Sport": "Wor",
+    "Sport": "wor",
     "Description": "",
     "Opening": "",
     "Folder": "wor_mendlak"
   },
   {
     "Name": "Street Švermova",
-    "Latitude": 49.166986,
-    "Longitude": 16.569734,
+    "Latitude": 49.166942,
+    "Longitude": 16.569994,
     "Sport": "bas",
     "Description": "Jeden koš, ideální na streetball nebo HORSE",
     "Opening": "",
@@ -424,8 +433,8 @@
   },
   {
     "Name": "Skatepark Bohunice",
-    "Latitude": 49.1672,
-    "Longitude": 16.568928,
+    "Latitude": 49.167537,
+    "Longitude": 16.569095,
     "Sport": "ska",
     "Description": "Street + bowl,na tohle už musíš být cool aby si tady jezdil",
     "Opening": "",
@@ -433,8 +442,8 @@
   },
   {
     "Name": "Basket Osová",
-    "Latitude": 49.1677,
-    "Longitude": 16.567683,
+    "Latitude": 49.167747,
+    "Longitude": 16.567937,
     "Sport": "bas",
     "Description": "Hřiště na basketbal",
     "Opening": "",
@@ -442,8 +451,8 @@
   },
   {
     "Name": "FunPark Bohunice",
-    "Latitude": 49.167788,
-    "Longitude": 16.567543,
+    "Latitude": 49.167755,
+    "Longitude": 16.567048,
     "Sport": "ska",
     "Description": "Malý FunPark pro skateboard",
     "Opening": "",
@@ -469,11 +478,20 @@
   },
   {
     "Name": "Luční",
-    "Latitude": 49.214799,
-    "Longitude": 16.572386,
+    "Latitude": 49.214752,
+    "Longitude": 16.57238,
     "Sport": "pin",
-    "Description": "Stůl na ping-pong",
+    "Description": "Stůl na ping pong",
     "Opening": "",
     "Folder": "pin_lucni"
+  },
+  {
+    "Name": "Tenis park Lužánky",
+    "Latitude": 49.205657,
+    "Longitude": 16.610233,
+    "Sport": "ten",
+    "Description": "Osm venkovních antukových kurtů",
+    "Opening": "",
+    "Folder": ""
   }
 ]

@@ -123,7 +123,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   
     const openingHours = document.createElement("p");
     openingHours.className = "callout-opening-hours";
-    openingHours.textContent = annotation.data.opening || "Otevřeno: Brzy přidáme";
+    openingHours.textContent = annotation.data.opening;
     contentDiv.appendChild(openingHours);
   
     div.appendChild(contentDiv);
@@ -208,6 +208,16 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     mapInstanceRef.current.addEventListener('pan-start', hideFilters);
     mapInstanceRef.current.addEventListener('single-tap', hideFilters);
   
+      const repositionMapTypeControl = () => {
+      const mapTypeControl = mapRef.current?.querySelector('.mk-map-type-control');
+      if (mapTypeControl) {
+        mapTypeControl.classList.add('map-type-control');
+      }
+    };
+  
+    // Call the function after a short delay to ensure the control has been added to the DOM
+    setTimeout(repositionMapTypeControl, 100);
+
     places.forEach((place: Place) => {
       const markerIcon = getMarkerIcon(place.Sport);
       if (markerIcon) {

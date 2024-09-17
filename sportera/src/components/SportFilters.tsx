@@ -8,18 +8,18 @@ interface SportFiltersProps {
 }
 
 const sportIcons: { [key: string]: string } = {
-  //gym: markers.gymMarker,
   bas: markers.basketballMarker,
+  foo: markers.footballMarker,
+  wor: markers.workoutMarker,
+  ska: markers.skateparkMarker,
+  pin: markers.pingpongMarker,
+  par: markers.parkourMarker,
   vol: markers.volleyballMarker,
   bou: markers.boulderMarker,
-  foo: markers.footballMarker,
-  pin: markers.pingpongMarker,
-  ska: markers.skateparkMarker,
   ten: markers.tennisMarker,
-  par: markers.parkourMarker,
-  wor: markers.workoutMarker,
   bf: markers.bfMarker,
   bfv: markers.bfvMarker,
+  //gym: markers.gymMarker,
 };
 
 const SportFilters: React.FC<SportFiltersProps> = ({ selectedSports, onToggleSport }) => {
