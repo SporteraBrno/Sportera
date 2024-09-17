@@ -31,7 +31,7 @@
   color: #000;
   font-size: 16px;
   font-weight: bold;
-  margin: 8px 0 6px 3px;
+  margin: 8px 0 6px 15px;
   padding: 0;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
 }
@@ -83,4 +83,29 @@
   font-size: 14px;
   text-align: center;
   border-radius: 15px 0 0 15px;
+}
+
+.rating-indicator {
+  position: fixed;
+  top: 15px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.rating-1 {
+  background-color: #4CAF50;
+  /* Green */
+}
+
+.rating-2 {
+  background-color: #FFA500;
+  /* Orange */
+}
+
+.rating-3 {
+  background-color: #FF0000;
+  /* Red */
 }

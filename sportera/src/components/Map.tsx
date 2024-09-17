@@ -26,6 +26,7 @@ interface Place {
   Description: string;
   Opening: string;
   Folder: string;
+  Rating?: number;  // Add this line
 }
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
@@ -126,6 +127,12 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     openingHours.textContent = annotation.data.opening;
     contentDiv.appendChild(openingHours);
   
+    if (annotation.data.rating) {
+      const ratingIndicator = document.createElement("span");
+      ratingIndicator.className = `rating-indicator rating-${annotation.data.rating}`;
+      contentDiv.appendChild(ratingIndicator);
+    }
+
     div.appendChild(contentDiv);
   
     if (annotation.data.folder) {
@@ -208,16 +215,6 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     mapInstanceRef.current.addEventListener('pan-start', hideFilters);
     mapInstanceRef.current.addEventListener('single-tap', hideFilters);
   
-      const repositionMapTypeControl = () => {
-      const mapTypeControl = mapRef.current?.querySelector('.mk-map-type-control');
-      if (mapTypeControl) {
-        mapTypeControl.classList.add('map-type-control');
-      }
-    };
-  
-    // Call the function after a short delay to ensure the control has been added to the DOM
-    setTimeout(repositionMapTypeControl, 100);
-
     places.forEach((place: Place) => {
       const markerIcon = getMarkerIcon(place.Sport);
       if (markerIcon) {
@@ -236,7 +233,8 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
             data: { 
               sport: place.Sport,
               folder: place.Folder,
-              opening: place.Opening
+              opening: place.Opening,
+              rating: place.Rating
             },
           }
         );
