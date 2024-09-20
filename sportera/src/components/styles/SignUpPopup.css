@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 .signup-overlay {
     position: fixed;
     top: 0;
@@ -14,18 +16,57 @@
 .signup-popup {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    /* Add some padding to the popup */
+    border-radius: 15px;
     width: 80%;
-    max-width: 500px;
+    max-width: 400px;
     position: relative;
+    font-family: 'Patrick Hand', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    /* Ensure consistent sizing */
+}
+
+.signup-popup h2 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 27px;
+}
+
+.signup-popup p {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .close-signup {
     position: absolute;
-    top: 10px;
+    top: 4px;
     right: 10px;
+    /* Changed from left to right */
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+    padding: 0;
+    /* Ensure no additional padding */
+}
+
+.close-signup:hover {
+    color: #333;
+}
+
+.profile-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-button {
+    max-width: 80px;
+    height: auto;
 }
