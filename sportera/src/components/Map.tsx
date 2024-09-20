@@ -5,6 +5,7 @@ import * as markers from '../assets/markers';
 import SportFilters from './SportFilters';
 import Lightbox from './LightBox';
 import OpenMeteoWeatherOverlay from './WeatherOverlay';
+import SignUpPopup from './SignUpPopup';
 import './styles/Map.css';
 import './styles/Filters.css';
 import './styles/SocialLinks.css';
@@ -26,7 +27,7 @@ interface Place {
   Description: string;
   Opening: string;
   Folder: string;
-  Rating?: number;  // Add this line
+  Rating?: number;
 }
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
@@ -45,6 +46,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   const [selectedSports, setSelectedSports] = useState<string[]>(
     Object.keys(markers)
   );
+  const [isSignUpOpen, setIsSignUpOpen] = useState(false);
 
   const hideFilters = useCallback(() => {
     setIsFiltersVisible(false);
@@ -71,7 +73,6 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     
     return icon;
   }, []);
-  
   const loadImagesForLightbox = useCallback((folder: string) => {
     const images: string[] = [];
     let i = 1;
@@ -91,7 +92,6 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
             setLightboxImages(images);
             setLightboxIndex(0);
           } else {
-            // No images found, don't open the lightbox
             console.log("No images found for this location");
           }
         };
@@ -154,7 +154,6 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
           });
           div.appendChild(image);
         }
-        // If the image doesn't exist, we don't add anything
       });
     }
   
@@ -195,7 +194,6 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       return newSelectedSports;
     });
   }, []);
-
   const initializeMap = useCallback(() => {
     if (mapInstanceRef.current || !mapRef.current || !window.mapkit) return;
   
@@ -286,12 +284,23 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
 
   const toggleFilters = useCallback(() => {
     setIsFiltersVisible(prev => !prev);
-    onFilterToggle(); // Call the prop function when filters are toggled
+    onFilterToggle();
   }, [onFilterToggle]);
+
+  const toggleSignUp = useCallback(() => {
+    setIsSignUpOpen(prev => !prev);
+  }, []);
 
   return (
     <div className="map-container">
       <div ref={mapRef} className="map" aria-label="Map of sport locations" />
+      <button 
+        className="sign-up-button"
+        onClick={toggleSignUp}
+      >
+        Přihlásit se
+      </button>
+      <SignUpPopup isOpen={isSignUpOpen} onClose={toggleSignUp} />
       <div className="social-links">
         <a 
           href="https://www.instagram.com/sporterabrno" 

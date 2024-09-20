@@ -1,29 +1,29 @@
 .social-links {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 2;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-  }
-  
-  .social-link:hover {
-    transform: scale(1.1);
-  }
-  
-  .social-logo {
-    width: 40px;
-    height: 40px;
-  }
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-logo {
+  width: 40px;
+  height: 40px;
+}

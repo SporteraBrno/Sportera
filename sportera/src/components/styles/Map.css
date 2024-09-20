@@ -23,3 +23,29 @@
   text-align: center;
   white-space: nowrap;
 }
+
+.sign-up-button {
+  position: absolute;
+  top: 15px;
+  left: 175px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 6px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Patrick Hand', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-up-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-50%) scale(1.05);
+}
