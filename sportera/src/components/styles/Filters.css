@@ -145,16 +145,15 @@
   }
 }
 
-@media (max-width: 767px) {
-  .filter-toggle-button {
-    bottom: 10px;
-    right: 10px;
-    animation: pulse 2s infinite;
-  }
 
-  .filter-toggle-button:active {
-    transform: scale(0.95);
-  }
+.filter-toggle-button {
+  bottom: 10px;
+  right: 10px;
+  animation: pulse 2s infinite;
+}
+
+.filter-toggle-button:active {
+  transform: scale(0.95);
 }
 
 .sport-filter-button {
