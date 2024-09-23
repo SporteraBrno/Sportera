@@ -61,6 +61,10 @@
   height: 175px;
 }
 
+.callout-image:hover {
+  cursor: pointer
+}
+
 .sport-icon-wrapper {
   display: flex;
   flex-direction: column;
@@ -70,8 +74,7 @@
 
 /* Optional: Add a subtle hover effect for interactivity */
 .custom-callout:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
 
 .no-image-placeholder {
