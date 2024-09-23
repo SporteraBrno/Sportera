@@ -14,6 +14,7 @@
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
+  position: relative;
 }
 
 .custom-callout .selectable {
@@ -25,6 +26,7 @@
   padding: 5px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .callout-title {
@@ -86,14 +88,26 @@
 }
 
 .rating-indicator {
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 5px;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  margin-left: 8px;
-  border: 2px solid rgb(255, 255, 255, 0.7)
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  /* Ensure it's above other content */
+}
+
+.info-icon {
+  font-style: italic;
+  font-family: serif;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .rating-1 {
@@ -109,4 +123,38 @@
 .rating-3 {
   background-color: #FF0000;
   /* Red */
+}
+
+.callout-button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.callout-nav-button {
+  background-color: rgba(0, 123, 255, 0.516);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.callout-nav-button:hover {
+  background-color: #4586ff;
+  /* Darker blue on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.callout-nav-button img {
+  width: 20px;
+  /* Slightly smaller icon */
+  height: 20px;
 }

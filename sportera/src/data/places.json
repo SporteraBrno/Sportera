@@ -6,7 +6,7 @@
     "Sport": "ten",
     "Description": "Hřiště na tenis",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "ten_KraviHora",
     "Rating": 1
   },
   {
@@ -20,7 +20,7 @@
     "Rating": 1
   },
   {
-    "Name": "Fotbal hřiště u Taneční konzervatoře",
+    "Name": "Taneční konzervatoř",
     "Latitude": 49.227114,
     "Longitude": 16.626407,
     "Sport": "foo",
@@ -36,7 +36,7 @@
     "Sport": "vol",
     "Description": "Hřiště na volejbal a nohejbal",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "ten_KraviHora",
     "Rating": 1
   },
   {
@@ -136,11 +136,11 @@
     "Sport": "bou",
     "Description": "Park na bouldering",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "bou_palackeho",
     "Rating": 1
   },
   {
-    "Name": "Futsálové hřiště Palackého koleje",
+    "Name": "Palackého koleje",
     "Latitude": 49.232388,
     "Longitude": 16.571077,
     "Sport": "foo",
@@ -150,7 +150,7 @@
     "Rating": 2
   },
   {
-    "Name": "Futsal/basket hřiště Decathlon Ivanovice",
+    "Name": "Decathlon Ivanovice",
     "Latitude": 49.260813,
     "Longitude": 16.580411,
     "Sport": "bf",
@@ -166,7 +166,7 @@
     "Sport": "bas",
     "Description": "Basketbalové hřiště s menším oválem",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "bas_blazkova",
     "Rating": 1
   },
   {
@@ -180,7 +180,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basketbal Taneční konzervatoř",
+    "Name": "Taneční konzervatoř",
     "Latitude": 49.227017,
     "Longitude": 16.625817,
     "Sport": "bas",
@@ -200,7 +200,7 @@
     "Rating": 3
   },
   {
-    "Name": "Basketbal zastávka Heleny Malířové",
+    "Name": "Lesná, nádraží",
     "Latitude": 49.222735,
     "Longitude": 16.629669,
     "Sport": "bas",
@@ -216,7 +216,7 @@
     "Sport": "bf",
     "Description": "Basket/futsal hřiště s umělým povrchem a zábranami",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "bf_NaVyhlidce",
     "Rating": 1
   },
   {
@@ -230,17 +230,17 @@
     "Rating": 1
   },
   {
-    "Name": "Parkour Arbesova",
+    "Name": "Flux Park Barvy",
     "Latitude": 49.22797,
     "Longitude": 16.631886,
     "Sport": "par",
     "Description": "Parkour hřiště s těžšíma překážkama",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "par_barvy",
     "Rating": 1
   },
   {
-    "Name": "Basket Štefánikova",
+    "Name": "Basket Kotěrova",
     "Latitude": 49.215832,
     "Longitude": 16.62861,
     "Sport": "bas",
@@ -250,13 +250,13 @@
     "Rating": 2
   },
   {
-    "Name": "Basket/futsal Tomanova",
+    "Name": "Schreberovy zahrádky",
     "Latitude": 49.207834,
     "Longitude": 16.62111,
     "Sport": "bf",
-    "Description": "Basket/futsál hřiště s umělým povrchem",
+    "Description": "hřiště s umělým povrchem",
     "Opening": "otevřeno 24/7",
-    "Folder": "",
+    "Folder": "bf_schreberovy",
     "Rating": 1
   },
   {
@@ -264,7 +264,7 @@
     "Latitude": 49.207399,
     "Longitude": 16.60755,
     "Sport": "wor",
-    "Description": "Workout v dobrém stavu",
+    "Description": "",
     "Opening": "otevřeno 24/7",
     "Folder": "wor_luzanky1",
     "Rating": 2
@@ -284,7 +284,7 @@
     "Latitude": 49.18654,
     "Longitude": 16.603186,
     "Sport": "bf",
-    "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
+    "Description": "Hřiště s umělým povrchem a menším ohraničením",
     "Opening": "otevřeno 24/7",
     "Folder": "bf_kridlovicka",
     "Rating": 1
@@ -304,7 +304,7 @@
     "Latitude": 49.178235,
     "Longitude": 16.594173,
     "Sport": "bf",
-    "Description": "Basket/futsál hřiště s umělým povrchem a menším ohraničením",
+    "Description": "Hřiště s umělým povrchem a menším ohraničením",
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 1
@@ -314,7 +314,7 @@
     "Latitude": 49.205177,
     "Longitude": 16.611875,
     "Sport": "wor",
-    "Description": "Workut hřiště ve skvělém stavu",
+    "Description": "",
     "Opening": "otevřeno 24/7",
     "Folder": "wor_luzanky2",
     "Rating": 1
@@ -336,7 +336,7 @@
     "Sport": "vol",
     "Description": "Volejbalové kurty - Potřeba rezervace",
     "Opening": "otevřeno 14-22",
-    "Folder": "",
+    "Folder": "vol_luzanky",
     "Rating": 1
   },
   {
@@ -344,7 +344,7 @@
     "Latitude": 49.231152,
     "Longitude": 16.583831,
     "Sport": "wor",
-    "Description": "Workout hřiště ve skvělém stavu",
+    "Description": "",
     "Opening": "otevřeno 24/7",
     "Folder": "wor_kolecko",
     "Rating": 1
@@ -354,7 +354,7 @@
     "Latitude": 49.228524,
     "Longitude": 16.59688,
     "Sport": "bas",
-    "Description": "Basketbalové hřiště s vysokým ohraničením",
+    "Description": "hřiště s vysokým ohraničením a tartanovým povrchem",
     "Opening": "otevřeno 6:00 - 22:00",
     "Folder": "bas_bozetechova",
     "Rating": 1
@@ -364,7 +364,7 @@
     "Latitude": 49.228398,
     "Longitude": 16.596113,
     "Sport": "wor",
-    "Description": "Workout hřiště ve skvělém stavu",
+    "Description": "",
     "Opening": "otevřeno 8:00 - 22:00",
     "Folder": "wor_bozetechova",
     "Rating": 1
@@ -374,7 +374,7 @@
     "Latitude": 49.207751,
     "Longitude": 16.635032,
     "Sport": "pin",
-    "Description": "Stůl na ping pong ve skvělém stavu",
+    "Description": "",
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 1
@@ -414,7 +414,7 @@
     "Latitude": 49.229254,
     "Longitude": 16.583428,
     "Sport": "pin",
-    "Description": "Stůl na pingpong",
+    "Description": "",
     "Opening": "otevřeno 24/7",
     "Folder": "pin_opicka",
     "Rating": 2
@@ -545,8 +545,8 @@
     "Longitude": 16.610233,
     "Sport": "ten",
     "Description": "Osm venkovních antukových kurtů",
-    "Opening": "https://www.tenisparkluzanky.cz/rekreacni-tenis",
-    "Folder": "",
+    "Opening": "otevřeno 7:00 - 21:00",
+    "Folder": "ten_luzanky",
     "Rating": 1
   }
 ]

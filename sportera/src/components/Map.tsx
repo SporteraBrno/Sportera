@@ -13,6 +13,7 @@ import './styles/Callouts.css';
 import './styles/Lightbox.css';
 import './styles/WeatherOverlay.css';
 
+
 declare global {
   interface Window {
     mapkit: any;
@@ -127,13 +128,33 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     openingHours.textContent = annotation.data.opening;
     contentDiv.appendChild(openingHours);
   
-    if (annotation.data.rating) {
-      const ratingIndicator = document.createElement("span");
-      ratingIndicator.className = `rating-indicator rating-${annotation.data.rating}`;
-      contentDiv.appendChild(ratingIndicator);
-    }
-
+    const buttonContainer = document.createElement("div");
+    buttonContainer.className = "callout-button-container";
+  
+    // Add navigation button
+    const button = document.createElement("button");
+    button.className = "callout-nav-button";
+    button.innerHTML = '<img src="/images/navigate-icon.svg" alt="Navigate" />';
+    button.addEventListener('click', () => {
+      const url = `https://www.google.com/maps/search/?api=1&query=${annotation.coordinate.latitude},${annotation.coordinate.longitude}`;
+      window.open(url, '_blank');
+    });
+    buttonContainer.appendChild(button);
+    contentDiv.appendChild(buttonContainer);
+  
     div.appendChild(contentDiv);
+  
+    if (annotation.data.rating) {
+      const ratingIndicator = document.createElement("div");
+      ratingIndicator.className = `rating-indicator rating-${annotation.data.rating}`;
+      
+      const infoIcon = document.createElement("span");
+      infoIcon.className = "info-icon";
+      infoIcon.textContent = "i";
+      
+      ratingIndicator.appendChild(infoIcon);
+      div.appendChild(ratingIndicator);
+    }
   
     if (annotation.data.folder) {
       const checkImageExists = (callback: (exists: boolean) => void) => {
@@ -324,7 +345,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
         onClick={toggleFilters}
         aria-label="Toggle sport filters"
       >
-        <img src="/images/logo.png" alt="Sportera logo" />
+        <img src="/images/filter-button.png" alt="Sportera logo" />
       </button>
       <div className={`filters-container ${isFiltersVisible ? 'visible' : ''}`}>
         <SportFilters selectedSports={selectedSports} onToggleSport={toggleSport} />

@@ -75,7 +75,7 @@
   bottom: 20px;
   right: 20px;
   z-index: 1001;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   border-radius: 50%;
   width: 75px;
@@ -97,7 +97,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: rgba(255, 255, 255, 0);
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;

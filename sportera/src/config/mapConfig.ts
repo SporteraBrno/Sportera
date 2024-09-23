@@ -7,6 +7,7 @@ export const mapKitConfig = {
     longitudeDelta: 0.10
   },
   mapSettings: {
+    showsUserLocation: true,
     showsZoomControl: false,
     showsMapTypeControl: true,
     showsPointsOfInterest: false,
