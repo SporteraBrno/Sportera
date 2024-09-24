@@ -30,7 +30,7 @@
     "Rating": 3
   },
   {
-    "Name": "Hřiště pod kraví horou",
+    "Name": "Hřiště pod Kraví horou",
     "Latitude": 49.202774,
     "Longitude": 16.581766,
     "Sport": "vol",
@@ -40,7 +40,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basketbal kraví hora",
+    "Name": "Basketbal Kraví hora",
     "Latitude": 49.203341,
     "Longitude": 16.58505,
     "Sport": "bf",
@@ -50,7 +50,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basketbal Klusáčkova",
+    "Name": "Klusáčkova",
     "Latitude": 49.211717,
     "Longitude": 16.592105,
     "Sport": "bf",
@@ -60,7 +60,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basketbal Kartouzská",
+    "Name": "Kartouzská",
     "Latitude": 49.215151,
     "Longitude": 16.597836,
     "Sport": "bas",
@@ -70,7 +70,7 @@
     "Rating": 1
   },
   {
-    "Name": "Parkour hřiště Kartouzská",
+    "Name": "Kartouzská",
     "Latitude": 49.215587,
     "Longitude": 16.597008,
     "Sport": "par",
@@ -80,7 +80,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basketbal Červinkova",
+    "Name": "Červinkova",
     "Latitude": 49.225107,
     "Longitude": 16.581453,
     "Sport": "bas",
@@ -90,7 +90,7 @@
     "Rating": 3
   },
   {
-    "Name": "Basketbal/kluziště Vodová",
+    "Name": "Vodova",
     "Latitude": 49.226305,
     "Longitude": 16.585243,
     "Sport": "bf",
@@ -120,7 +120,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basket Mánesova",
+    "Name": "Mánesova",
     "Latitude": 49.231429,
     "Longitude": 16.586736,
     "Sport": "bas",
@@ -130,7 +130,7 @@
     "Rating": 3
   },
   {
-    "Name": "Boulder Palackého Vrch",
+    "Name": "Venkovní boulder VUT",
     "Latitude": 49.227893,
     "Longitude": 16.571494,
     "Sport": "bou",
@@ -160,7 +160,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basket Blažkova",
+    "Name": "Blažkova",
     "Latitude": 49.230192,
     "Longitude": 16.626129,
     "Sport": "bas",
@@ -170,7 +170,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basket/futsal Čertova rokle",
+    "Name": "Čertova rokle",
     "Latitude": 49.228793,
     "Longitude": 16.626904,
     "Sport": "bf",
@@ -190,7 +190,7 @@
     "Rating": 3
   },
   {
-    "Name": "Basketbal Slavíčkova",
+    "Name": "Slavíčkova",
     "Latitude": 49.225548,
     "Longitude": 16.619646,
     "Sport": "bas",
@@ -210,7 +210,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basket/futsál na Vyhlídce",
+    "Name": "Na Vyhlídce",
     "Latitude": 49.223675,
     "Longitude": 16.633495,
     "Sport": "bf",
@@ -220,7 +220,7 @@
     "Rating": 1
   },
   {
-    "Name": "Workout hřiště na Vyhlídce",
+    "Name": "Na Vyhlídce",
     "Latitude": 49.223594,
     "Longitude": 16.633269,
     "Sport": "wor",
@@ -240,7 +240,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basket Kotěrova",
+    "Name": "Kotěrova",
     "Latitude": 49.215832,
     "Longitude": 16.62861,
     "Sport": "bas",
@@ -260,7 +260,7 @@
     "Rating": 1
   },
   {
-    "Name": "Workout Lužánky",
+    "Name": "Lužánky",
     "Latitude": 49.207399,
     "Longitude": 16.60755,
     "Sport": "wor",
@@ -270,7 +270,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basket/futsál Čechyňská",
+    "Name": "Sportovní hřiště Čechyňská",
     "Latitude": 49.188079,
     "Longitude": 16.620454,
     "Sport": "bf",
@@ -280,7 +280,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basket/futsál Křídlovická",
+    "Name": "Křídlovická",
     "Latitude": 49.18654,
     "Longitude": 16.603186,
     "Sport": "bf",
@@ -290,7 +290,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basket/volleybal hřiště Zahradnická",
+    "Name": "Zahradnická",
     "Latitude": 49.186909,
     "Longitude": 16.597369,
     "Sport": "bfv",
@@ -300,7 +300,7 @@
     "Rating": 2
   },
   {
-    "Name": "Basket/futsál Celní",
+    "Name": "Celní",
     "Latitude": 49.178235,
     "Longitude": 16.594173,
     "Sport": "bf",
@@ -310,7 +310,7 @@
     "Rating": 1
   },
   {
-    "Name": "Workout Lužánecká",
+    "Name": "Lužánecká",
     "Latitude": 49.205177,
     "Longitude": 16.611875,
     "Sport": "wor",
@@ -350,7 +350,7 @@
     "Rating": 1
   },
   {
-    "Name": "Basket park Božetěchova",
+    "Name": "Božetěchův sad",
     "Latitude": 49.228524,
     "Longitude": 16.59688,
     "Sport": "bas",
@@ -360,7 +360,7 @@
     "Rating": 1
   },
   {
-    "Name": "Workout park Božetěchova",
+    "Name": "Božetěchův sad",
     "Latitude": 49.228398,
     "Longitude": 16.596113,
     "Sport": "wor",
@@ -370,7 +370,7 @@
     "Rating": 1
   },
   {
-    "Name": "Stolní tenis Nová Zbrojovka",
+    "Name": "Nová Zbrojovka",
     "Latitude": 49.207751,
     "Longitude": 16.635032,
     "Sport": "pin",
@@ -430,7 +430,7 @@
     "Rating": 1
   },
   {
-    "Name": "Hřiště Příkrá",
+    "Name": "Příkrá",
     "Latitude": 49.220306,
     "Longitude": 16.566565,
     "Sport": "bf",
@@ -440,7 +440,7 @@
     "Rating": 1
   },
   {
-    "Name": "Stolní tenis Příkrá",
+    "Name": "Příkrá",
     "Latitude": 49.22071,
     "Longitude": 16.56666,
     "Sport": "pin",
@@ -514,7 +514,7 @@
     "Latitude": 49.2192443,
     "Longitude": 16.577536,
     "Sport": "wor",
-    "Description": "Workout hřiště od cvicimeworkout.cz",
+    "Description": "Workout hřiště od www.cvicimeworkout.cz",
     "Opening": "otevřeno 24/7",
     "Folder": "wor_kralovopolska",
     "Rating": 3

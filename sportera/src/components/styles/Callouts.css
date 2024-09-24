@@ -50,14 +50,14 @@
   color: #333;
   font-size: 12px;
   font-style: italic;
-  margin: 0;
+  margin: 0 0 10px 3px;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
 .callout-image {
   width: 110px;
   object-fit: cover;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px 15px 15px 15px;
   height: 175px;
 }
 
@@ -65,56 +65,40 @@
   cursor: pointer
 }
 
-.sport-icon-wrapper {
+.callout-footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 5px;
-}
-
-/* Optional: Add a subtle hover effect for interactivity */
-.custom-callout:hover {
-  transform: scale(1.05);
-}
-
-.no-image-placeholder {
-  width: 33.33%;
-  height: 175px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
-  color: #666;
-  font-size: 14px;
-  text-align: center;
-  border-radius: 15px 0 0 15px;
+  padding: 5px;
 }
 
 .rating-indicator {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.7);
-  z-index: 1;
-  /* Ensure it's above other content */
+  cursor: pointer;
+  transition: 0.3s
+}
+
+.rating-indicator:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 .info-icon {
   font-style: italic;
   font-family: serif;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .rating-1 {
-  background-color: #4CAF50;
+  background-color: #28d42e;
   /* Green */
 }
 
@@ -128,36 +112,25 @@
   /* Red */
 }
 
-.callout-button-container {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 5px;
-}
-
 .callout-nav-button {
-  background-color: rgba(0, 123, 255, 0.516);
+  background-color: rgba(0, 123, 255, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
   margin: 0;
   cursor: pointer;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  border-radius: 10px;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .callout-nav-button:hover {
   background-color: #4586ff;
-  /* Darker blue on hover */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .callout-nav-button img {
   width: 20px;
-  /* Slightly smaller icon */
   height: 20px;
 }

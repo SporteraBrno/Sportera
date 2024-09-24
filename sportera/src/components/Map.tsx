@@ -109,6 +109,17 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     div.className = "custom-callout";
     div.setAttribute('role', 'dialog');
     div.setAttribute('aria-label', `Information about ${annotation.title}`);
+  
+    if (annotation.data.folder) {
+      const image = document.createElement("img");
+      image.className = "callout-image";
+      image.alt = `Image of ${annotation.title}`;
+      image.src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.jpg`;
+      image.addEventListener('click', () => {
+        loadImagesForLightbox(annotation.data.folder);
+      });
+      div.appendChild(image);
+    }
     
     const contentDiv = document.createElement("div");
     contentDiv.className = "callout-content";
@@ -119,19 +130,31 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     contentDiv.appendChild(title);
   
     const description = document.createElement("p");
-    description.className = "callout-description selectable";
-    description.textContent = annotation.subtitle;
-    contentDiv.appendChild(description);
+  description.className = "callout-description selectable";
+  
+  // Convert URLs to clickable links
+  const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+\.[^\s]+)/g;
+  const descriptionWithLinks = annotation.subtitle.replace(urlRegex, (url: string) => {
+    let href = url;
+    if (url.startsWith('www.')) {
+      href = 'http://' + url;
+    }
+    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+  });
+  
+  description.innerHTML = descriptionWithLinks;
+  contentDiv.appendChild(description);
   
     const openingHours = document.createElement("p");
     openingHours.className = "callout-opening-hours";
     openingHours.textContent = annotation.data.opening;
     contentDiv.appendChild(openingHours);
   
-    const buttonContainer = document.createElement("div");
-    buttonContainer.className = "callout-button-container";
+    div.appendChild(contentDiv);
   
-    // Add navigation button
+    const footer = document.createElement("div");
+    footer.className = "callout-footer";
+  
     const button = document.createElement("button");
     button.className = "callout-nav-button";
     button.innerHTML = '<img src="/images/navigate-icon.svg" alt="Navigate" />';
@@ -139,10 +162,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       const url = `https://www.google.com/maps/search/?api=1&query=${annotation.coordinate.latitude},${annotation.coordinate.longitude}`;
       window.open(url, '_blank');
     });
-    buttonContainer.appendChild(button);
-    contentDiv.appendChild(buttonContainer);
-  
-    div.appendChild(contentDiv);
+    footer.appendChild(button);
   
     if (annotation.data.rating) {
       const ratingIndicator = document.createElement("div");
@@ -153,30 +173,10 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       infoIcon.textContent = "i";
       
       ratingIndicator.appendChild(infoIcon);
-      div.appendChild(ratingIndicator);
+      footer.appendChild(ratingIndicator);
     }
   
-    if (annotation.data.folder) {
-      const checkImageExists = (callback: (exists: boolean) => void) => {
-        const img = new Image();
-        img.onload = () => callback(true);
-        img.onerror = () => callback(false);
-        img.src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.jpg`;
-      };
-  
-      checkImageExists((exists) => {
-        if (exists) {
-          const image = document.createElement("img");
-          image.className = "callout-image";
-          image.alt = `Image of ${annotation.title}`;
-          image.src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.jpg`;
-          image.addEventListener('click', () => {
-            loadImagesForLightbox(annotation.data.folder);
-          });
-          div.appendChild(image);
-        }
-      });
-    }
+    contentDiv.appendChild(footer);
   
     return div;
   }, [loadImagesForLightbox]);
