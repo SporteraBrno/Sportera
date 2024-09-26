@@ -125,6 +125,7 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
           <button className="lightbox-nav next" onClick={(e) => { e.stopPropagation(); goToNext(); }} />
         </>
       )}
+      <button className="lightbox-exit" onClick={(e) => { e.stopPropagation(); onClose(); }} />
     </div>
   );
 };

@@ -65,8 +65,8 @@
   }
 
   .sport-icon {
-    width: 57px;
-    height: 57px;
+    width: 67px;
+    height: 67px;
   }
 }
 
@@ -150,6 +150,7 @@
   bottom: 10px;
   right: 10px;
   animation: pulse 2s infinite;
+  z-index: 998;
 }
 
 .filter-toggle-button:active {
