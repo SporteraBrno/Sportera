@@ -4,7 +4,7 @@
   -webkit-backdrop-filter: blur(12px);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  min-width: 250px;
+  min-width: 260px;
   max-width: 300px;
   user-select: text;
   cursor: default;
@@ -32,9 +32,10 @@
   color: #000;
   font-size: 16px;
   font-weight: bold;
-  margin: 8px 0 6px 3px;
+  margin: 4px 0 6px 3px;
   padding: 0;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0px rgba(255, 255, 255, 0.5);
+  text-shadow: -1px 0 rgba(255, 255, 255, 0.7), 0 1px rgb(255, 255, 255, 0.7), 1px 0 rgb(255, 255, 255, 0.7), 0 -1px rgb(255, 255, 255, 0.7);
 }
 
 .callout-description {
@@ -49,7 +50,7 @@
   color: #333;
   font-size: 12px;
   font-style: italic;
-  margin: 0 0 10px 3px;
+  margin: 0 0 37px 3px;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
@@ -57,7 +58,8 @@
   width: 110px;
   object-fit: cover;
   border-radius: 15px 15px 15px 15px;
-  height: 175px;
+  min-height: 150px;
+  max-height: 185px;
 }
 
 .callout-image:hover {
@@ -69,6 +71,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  padding-bottom: 2px;
+  position: absolute;
+  bottom: 0px;
+  width: 92%;
 }
 
 .rating-indicator {
@@ -122,6 +128,7 @@
   cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s, box-shadow 0.3s;
+
 }
 
 .callout-nav-button:hover {
@@ -132,4 +139,33 @@
 .callout-nav-button img {
   width: 20px;
   height: 20px;
+}
+
+.callout-reel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.callout-reel-button img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.callout-reel-button {
+  background-color: #E1306C;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.callout-reel-button img:hover {
+  transform: scale(1.1);
 }

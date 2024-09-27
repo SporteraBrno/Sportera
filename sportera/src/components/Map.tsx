@@ -29,6 +29,7 @@ interface Place {
   Opening: string;
   Folder: string;
   Rating?: number;
+  Reel?: string;
 }
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
@@ -130,27 +131,25 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     contentDiv.appendChild(title);
   
     const description = document.createElement("p");
-  description.className = "callout-description selectable";
+    description.className = "callout-description selectable";
   
-  // Convert URLs to clickable links
-  const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+\.[^\s]+)/g;
-  const descriptionWithLinks = annotation.subtitle.replace(urlRegex, (url: string) => {
-    let href = url;
-    if (url.startsWith('www.')) {
-      href = 'http://' + url;
-    }
-    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
-  });
+    // Convert URLs to clickable links
+    const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+\.[^\s]+)/g;
+    const descriptionWithLinks = annotation.subtitle.replace(urlRegex, (url: string) => {
+      let href = url;
+      if (url.startsWith('www.')) {
+        href = 'http://' + url;
+      }
+      return `<a href="${href}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    });
   
-  description.innerHTML = descriptionWithLinks;
-  contentDiv.appendChild(description);
+    description.innerHTML = descriptionWithLinks;
+    contentDiv.appendChild(description);
   
     const openingHours = document.createElement("p");
     openingHours.className = "callout-opening-hours";
     openingHours.textContent = annotation.data.opening;
     contentDiv.appendChild(openingHours);
-  
-    div.appendChild(contentDiv);
   
     const footer = document.createElement("div");
     footer.className = "callout-footer";
@@ -158,11 +157,50 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     const button = document.createElement("button");
     button.className = "callout-nav-button";
     button.innerHTML = '<img src="/images/navigate-icon.svg" alt="Navigate" />';
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default action
       const url = `https://www.google.com/maps/search/?api=1&query=${annotation.coordinate.latitude},${annotation.coordinate.longitude}`;
-      window.open(url, '_blank');
+      
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Mobile device
+        window.location.href = url;
+      } else {
+        // Desktop
+        window.open(url, '_blank');
+      }
     });
     footer.appendChild(button);
+  
+    if (annotation.data.reel) {
+      const reelButton = document.createElement("button");
+      reelButton.className = "callout-reel-button";
+      reelButton.innerHTML = '<img src="/images/instagram_logo.svg" alt="Watch Instagram Reel" />';
+      reelButton.addEventListener('click', () => {
+        const reelUrl = annotation.data.reel;
+        // Ensure the URL ends with just the reel ID
+        const cleanReelUrl = reelUrl.split('?')[0];
+        
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          // For iOS, use the web URL directly
+          window.location.href = cleanReelUrl;
+        } else if (/Android/i.test(navigator.userAgent)) {
+          // For Android, try to open the app first, then fall back to the web
+          const reelId = cleanReelUrl.split('/reel/')[1].replace('/', '');
+          const instagramAppUrl = `intent://instagram.com/reel/${reelId}#Intent;package=com.instagram.android;scheme=https;end`;
+          
+          window.location.href = instagramAppUrl;
+          
+          // Fallback to web URL after a short delay if the app doesn't open
+          setTimeout(() => {
+            window.location.href = cleanReelUrl;
+          }, 2000);
+        } else {
+          // For desktop or other devices, open in a new tab
+          window.open(cleanReelUrl, '_blank');
+        }
+      });
+      footer.appendChild(reelButton);
+    }
   
     if (annotation.data.rating) {
       const ratingIndicator = document.createElement("div");
@@ -177,6 +215,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     }
   
     contentDiv.appendChild(footer);
+    div.appendChild(contentDiv);
   
     return div;
   }, [loadImagesForLightbox]);
@@ -253,7 +292,8 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
               sport: place.Sport,
               folder: place.Folder,
               opening: place.Opening,
-              rating: place.Rating
+              rating: place.Rating,
+              reel: place.Reel
             },
           }
         );
