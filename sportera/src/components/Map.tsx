@@ -287,7 +287,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
             callout: {
               calloutElementForAnnotation: createCustomCallout,
             },
-            accessibilityLabel: `${place.Sport} location: ${place.Name}`,
+            accessibilityLabel: `${place.Name}`,
             data: { 
               sport: place.Sport,
               folder: place.Folder,
