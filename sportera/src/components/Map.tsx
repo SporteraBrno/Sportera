@@ -13,7 +13,6 @@ import './styles/Callouts.css';
 import './styles/Lightbox.css';
 import './styles/WeatherOverlay.css';
 
-
 declare global {
   interface Window {
     mapkit: any;
@@ -42,6 +41,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const annotationsRef = useRef<any[]>([]);
+  const mapContainerRef = useRef<HTMLDivElement>(null);
   const [lightboxImages, setLightboxImages] = useState<string[]>([]);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [isFiltersVisible, setIsFiltersVisible] = useState(false);
@@ -49,6 +49,8 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     Object.keys(markers)
   );
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
+  const [ratingPopupVisible, setRatingPopupVisible] = useState(false);
+  const [ratingPopupPosition, setRatingPopupPosition] = useState({ x: 0, y: 0 });
 
   const hideFilters = useCallback(() => {
     setIsFiltersVisible(false);
@@ -75,6 +77,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     
     return icon;
   }, []);
+
   const loadImagesForLightbox = useCallback((folder: string) => {
     const images: string[] = [];
     let i = 1;
@@ -211,6 +214,18 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       infoIcon.textContent = "i";
       
       ratingIndicator.appendChild(infoIcon);
+      ratingIndicator.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const rect = ratingIndicator.getBoundingClientRect();
+        const mapRect = mapContainerRef.current?.getBoundingClientRect();
+        if (mapRect) {
+          setRatingPopupPosition({
+            x: rect.left - mapRect.left,
+            y: rect.bottom - mapRect.top + 5 // Small offset for visual separation
+          });
+          setRatingPopupVisible(prev => !prev);
+        }
+      });
       footer.appendChild(ratingIndicator);
     }
   
@@ -254,6 +269,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       return newSelectedSports;
     });
   }, []);
+
   const initializeMap = useCallback(() => {
     if (mapInstanceRef.current || !mapRef.current || !window.mapkit) return;
   
@@ -302,7 +318,6 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       }
     });
   }, [createCustomCallout, getMarkerIcon, hideFilters]);
-  
   useEffect(() => {
     if (!window.mapkit) {
       const script = document.createElement('script');
@@ -343,6 +358,22 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     }
   }, [selectedSports]);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (ratingPopupVisible) {
+        const target = event.target as Node;
+        if (target instanceof Element && !target.closest('.rating-indicator')) {
+          setRatingPopupVisible(false);
+        }
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [ratingPopupVisible]);
+
   const toggleFilters = useCallback(() => {
     setIsFiltersVisible(prev => !prev);
     onFilterToggle();
@@ -353,7 +384,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   }, []);
 
   return (
-    <div className="map-container">
+    <div ref={mapContainerRef} className="map-container">
       <div ref={mapRef} className="map" aria-label="Map of sport locations" />
       <button 
         className="sign-up-button"
@@ -397,6 +428,19 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
           onClose={() => setLightboxImages([])}
           onNavigate={(newIndex) => setLightboxIndex(newIndex)}
         />
+      )}
+      {ratingPopupVisible && (
+        <div 
+          className="rating-popup"
+          style={{
+            position: 'absolute',
+            left: `${ratingPopupPosition.x - 150}px`,
+            top: `${ratingPopupPosition.y}px`,
+            zIndex: 9999,
+          }}
+        >
+          <img src="/images/rating.png" alt="Rating explanation" />
+        </div>
       )}
       <OpenMeteoWeatherOverlay coordinate={brnoCoordinates} />
     </div>

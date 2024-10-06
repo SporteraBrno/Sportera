@@ -8,7 +8,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "ten_KraviHora",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C472nVtNLZq/"
   },
   {
     "Name": "Vlněná basket",
@@ -19,7 +19,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bas_vlnena",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C4yT4UuKpqc/"
   },
   {
     "Name": "Taneční konzervatoř",
@@ -30,7 +30,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6BXOu9qUvV/"
   },
   {
     "Name": "Hřiště pod Kraví horou",
@@ -41,7 +41,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "ten_KraviHora",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C472nVtNLZq/"
   },
   {
     "Name": "Basketbal Kraví hora",
@@ -52,7 +52,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C43CgZjKpW3/"
   },
   {
     "Name": "Klusáčkova",
@@ -63,7 +63,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bf_klusackova",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C58GznUqXrl/"
   },
   {
     "Name": "Kartouzská",
@@ -74,7 +74,7 @@
     "Opening": "otevřeno 8:00 - 21:00",
     "Folder": "bas_kartouzska",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C48oB-2NKiG/"
   },
   {
     "Name": "Kartouzská",
@@ -85,7 +85,7 @@
     "Opening": "otevřeno 8:00 - 21:00",
     "Folder": "par_kartouzska",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C48ojp-N2Hw/"
   },
   {
     "Name": "Červinkova",
@@ -118,21 +118,21 @@
     "Opening": "otevřeno 8:00 - 20:00",
     "Folder": "bf_opicka",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5QcO0XqhhC/"
   },
   {
     "Name": "Sportovní hřiště Kolečko",
     "Latitude": 49.231581,
     "Longitude": 16.583999,
     "Sport": "bf",
-    "Description": "Hřište na basket a futsal s umělým povrchem",
+    "Description": "Hřiště na basket a fotbal s umělým povrchem",
     "Opening": "otevřeno 8:00 - 21:00",
     "Folder": "bf_kolecko",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5BDI-wNCuS/"
   },
   {
-    "Name": "Mánesova",
+    "Name": "Mánesova - čtverec",
     "Latitude": 49.231429,
     "Longitude": 16.586736,
     "Sport": "bas",
@@ -140,7 +140,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bas_ctverec",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5TG2ndqqTk/"
   },
   {
     "Name": "Venkovní boulder VUT",
@@ -151,7 +151,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bou_palackeho",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6tA5zCq9_o/"
   },
   {
     "Name": "Palackého koleje",
@@ -162,18 +162,18 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6yZYM7q7cm/"
   },
   {
     "Name": "Decathlon Ivanovice",
     "Latitude": 49.260813,
     "Longitude": 16.580411,
     "Sport": "bf",
-    "Description": "Futsal/basket hřište s umělým povrchem - možnost půjčení míče v Decathonu",
+    "Description": "Futsal/basket hřiště s umělým povrchem - možnost půjčení míče v Decathlonu",
     "Opening": "otevřeno 9:00 - 21:00",
     "Folder": "",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5qSYMoq5x2/"
   },
   {
     "Name": "Blažkova",
@@ -184,7 +184,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bas_blazkova",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5v4YAiKYNt/"
   },
   {
     "Name": "Čertova rokle",
@@ -206,7 +206,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6BXOu9qUvV/"
   },
   {
     "Name": "Slavíčkova",
@@ -217,7 +217,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6LisT9KJmB/"
   },
   {
     "Name": "Lesná, nádraží",
@@ -228,7 +228,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6Yxyg2qRcV/"
   },
   {
     "Name": "Na Vyhlídce",
@@ -239,7 +239,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bf_NaVyhlidce",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6GZ3MdKOMT/"
   },
   {
     "Name": "Na Vyhlídce",
@@ -257,11 +257,11 @@
     "Latitude": 49.22797,
     "Longitude": 16.631886,
     "Sport": "par",
-    "Description": "Parkour hřiště s těžšíma překážkama",
+    "Description": "Parkour hřiště s těžšími překážkama",
     "Opening": "otevřeno 24/7",
     "Folder": "par_barvy",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C6i9m4KqOrt/"
   },
   {
     "Name": "Kotěrova",
@@ -272,7 +272,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C68dZJdKcFk/"
   },
   {
     "Name": "Schreberovy zahrádky",
@@ -283,7 +283,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bf_schreberovy",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C528fw0KWgE/"
   },
   {
     "Name": "Lužánky",
@@ -294,18 +294,18 @@
     "Opening": "otevřeno 24/7",
     "Folder": "wor_luzanky1",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5NowYpKeGs/"
   },
   {
     "Name": "Sportovní hřiště Čechyňská",
     "Latitude": 49.188079,
     "Longitude": 16.620454,
     "Sport": "bf",
-    "Description": "Hřiště na basket a futsal s betonovým povrchem, vysoké ohraničením",
+    "Description": "Hřiště na basket a fotbal s betonovým povrchem, vysoké ohraničením",
     "Opening": "otevřeno 8.00 - 20:00",
     "Folder": "bf_cechynska",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5YRy1YKbNZ/"
   },
   {
     "Name": "Křídlovická",
@@ -316,7 +316,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bf_kridlovicka",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5GPEmKtdgB/"
   },
   {
     "Name": "Zahradnická",
@@ -327,7 +327,7 @@
     "Opening": "otevřeno 6:00 - 20:00",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5Dti3rNt9T/"
   },
   {
     "Name": "Celní",
@@ -338,7 +338,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5gAJ9rKFNx/"
   },
   {
     "Name": "Lužánecká",
@@ -448,14 +448,14 @@
     "Opening": "otevřeno 6:00 - 22:00",
     "Folder": "bf_lucni",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAQfNZWqWZ6/"
   },
   {
     "Name": "Opička",
     "Latitude": 49.229254,
     "Longitude": 16.583428,
     "Sport": "pin",
-    "Description": "Opoužívaný",
+    "Description": "Stůl není v nejlepším stavu. Síť je na místě. Povrch je betonový.",
     "Opening": "otevřeno 24/7",
     "Folder": "pin_opicka",
     "Rating": 2,
@@ -466,18 +466,18 @@
     "Latitude": 49.193911,
     "Longitude": 16.593978,
     "Sport": "ska",
-    "Description": "Skatepark idealní pro začátečníky i pokročilé",
+    "Description": "Skatepark ideální pro začátečníky i pokročilé",
     "Opening": "otevřeno 24/7",
     "Folder": "ska_mendlak",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAVmye9KMmO/"
   },
   {
     "Name": "Příkrá",
     "Latitude": 49.220306,
     "Longitude": 16.566565,
     "Sport": "bf",
-    "Description": "",
+    "Description": "Multifunkční hřiště na basket a fotbal. Oplocené vysokým plotem. Povrch je tartan.",
     "Opening": "otevřeno 24/7",
     "Folder": "bf_prikra",
     "Rating": 1,
@@ -488,7 +488,7 @@
     "Latitude": 49.22071,
     "Longitude": 16.56666,
     "Sport": "pin",
-    "Description": "",
+    "Description": "Stůl na ping pong je bez sítě a povrch okolo je nezpevněný.",
     "Opening": "otevřeno 24/7",
     "Folder": "pin_prikra",
     "Rating": 2,
@@ -503,18 +503,18 @@
     "Opening": "otevřeno 24/7",
     "Folder": "foo_mendlak",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAVmye9KMmO/"
   },
   {
     "Name": "Workout Mendlák",
     "Latitude": 49.193356,
     "Longitude": 16.593376,
     "Sport": "wor",
-    "Description": "",
+    "Description": "Malé hřiště na workout. Hřiště je v dobrém stavu, ale není zde moc prvku na cvičení.",
     "Opening": "otevřeno 24/7",
     "Folder": "wor_mendlak",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAVmye9KMmO/"
   },
   {
     "Name": "Street Švermova",
@@ -525,7 +525,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bas_svermova",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAdUb4rKc7x/"
   },
   {
     "Name": "Skatepark Bohunice",
@@ -536,7 +536,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "ska_bohunice1",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAdUb4rKc7x/"
   },
   {
     "Name": "Basket Osová",
@@ -547,7 +547,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "bas_osova",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DAdUb4rKc7x/"
   },
   {
     "Name": "FunPark Bohunice",
@@ -576,7 +576,7 @@
     "Latitude": 49.2206717,
     "Longitude": 16.570907,
     "Sport": "bf",
-    "Description": "",
+    "Description": "Nové a moderní hřiště na basket a fotbal. Oploceno vysokým plotem. Povrch je tartan. Čáry jsou dobře viditelné.",
     "Opening": "otevřeno 24/7",
     "Folder": "bf_vychodilova",
     "Rating": 1,
@@ -609,7 +609,7 @@
     "Latitude": 49.216531,
     "Longitude": 16.502907,
     "Sport": "bas",
-    "Description": "",
+    "Description": "Hřiště na basket oplocené vysokým plotem. Povrch je asfaltový a čáry jsou viditelné. Po stranách jsou lavičky a koš.",
     "Opening": "otevřeno 8:00 - 20:00",
     "Folder": "",
     "Rating": 1,
@@ -631,7 +631,7 @@
     "Latitude": 49.217616,
     "Longitude": 16.500325,
     "Sport": "bf",
-    "Description": "6 branek, 4 koše",
+    "Description": "Velké a nové multifunkční hřiště na basket a fotbal. Na hřišti je 6 branek na fotbal a 4 koše na basket. Povrch je tartan a čáry jsou viditelné",
     "Opening": "",
     "Folder": "",
     "Rating": 1,
@@ -642,7 +642,7 @@
     "Latitude": 49.217428,
     "Longitude": 16.50034,
     "Sport": "wor",
-    "Description": "",
+    "Description": "Nové hřiště na workout. Povrch tartan. Mnoho prvků na cvičení.",
     "Opening": "",
     "Folder": "",
     "Rating": 1,
@@ -653,7 +653,7 @@
     "Latitude": 49.217571,
     "Longitude": 16.500031,
     "Sport": "par",
-    "Description": "",
+    "Description": "Nové a rozlehlé hřiště na parkour. Mnoho různých překážek a prvku na trénink.",
     "Opening": "",
     "Folder": "",
     "Rating": 1,
@@ -664,7 +664,7 @@
     "Latitude": 49.217176,
     "Longitude": 16.500019,
     "Sport": "bou",
-    "Description": "",
+    "Description": "Malá zeď na lezení. Ideální pro úplné začátečníky nebo děti.",
     "Opening": "",
     "Folder": "",
     "Rating": 2,
@@ -675,10 +675,10 @@
     "Latitude": 49.213715,
     "Longitude": 16.589364,
     "Sport": "bas",
-    "Description": "",
+    "Description": "Na celém hřišti je pouze jeden koš. Povrch je asfaltový a čáry jsou kolem koše. Ideální na hru 1 vs 1 nebo 3 vs 3.",
     "Opening": "",
     "Folder": "",
-    "Rating": 2,
+    "Rating": 3,
     "Reel": ""
   },
   {
@@ -686,7 +686,7 @@
     "Latitude": 49.21412,
     "Longitude": 16.589706,
     "Sport": "foo",
-    "Description": "",
+    "Description": "Hřiště má dvě branky bez sítí. Povrch je asfaltový a jsou viditelné čáry.",
     "Opening": "",
     "Folder": "",
     "Rating": 2,
@@ -697,10 +697,10 @@
     "Latitude": 49.214108,
     "Longitude": 16.589967,
     "Sport": "vol",
-    "Description": "",
+    "Description": "Hřiště má pouze tyče, ale síť chybí. Povrch je asfaltový.",
     "Opening": "",
     "Folder": "",
-    "Rating": 2,
+    "Rating": 3,
     "Reel": ""
   },
   {
@@ -708,7 +708,7 @@
     "Latitude": 49.214252,
     "Longitude": 16.589035,
     "Sport": "wor",
-    "Description": "",
+    "Description": "Hřiště obsahuje pouze stroje na cvičení. Povrch je vysypán kamínky.",
     "Opening": "",
     "Folder": "",
     "Rating": 2,
@@ -719,10 +719,21 @@
     "Latitude": 49.214356,
     "Longitude": 16.589357,
     "Sport": "par",
-    "Description": "",
+    "Description": "Malé hřiště na parkour. Pouze pár překážek a prvku. Povrch je tartan.",
     "Opening": "",
     "Folder": "",
     "Rating": 2,
     "Reel": ""
+  },
+  {
+    "Name": "Hřiště Draken",
+    "Latitude": 49.202506,
+    "Longitude": 16.585314,
+    "Sport": "foo",
+    "Description": "",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 1,
+    "Reel": "https://www.instagram.com/reel/C40Yf-iq03b/"
   }
 ]
