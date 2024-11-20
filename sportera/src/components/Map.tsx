@@ -395,7 +395,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       <SignUpPopup isOpen={isSignUpOpen} onClose={toggleSignUp} />
       <div className="social-links">
         <a 
-          href="https://www.instagram.com/sporterabrno" 
+          href="https://www.instagram.com/sportera.cz" 
           target="_blank" 
           rel="noopener noreferrer"
           className="social-link instagram-link"

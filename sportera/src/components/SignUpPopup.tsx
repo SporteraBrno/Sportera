@@ -29,7 +29,7 @@ const SignUpPopup: React.FC<SignUpPopupProps> = ({ isOpen, onClose }) => {
       <div className="signup-popup">
         <button className="close-signup" onClick={onClose}>&times;</button>
         <h2>Děkujeme že sportujete</h2>
-        <p>Uživatelské účty budou k dispozici od Listopadu</p>
+        <p>Uživatelské účty budou k dispozici brzy!</p>
         <div className="profile-button-container">
           <img
             src="/images/ProfileButton.png"
