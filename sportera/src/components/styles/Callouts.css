@@ -59,7 +59,7 @@
   object-fit: cover;
   border-radius: 15px 15px 15px 15px;
   min-height: 150px;
-  max-height: 185px;
+  max-height: 220px;
 }
 
 .callout-image:hover {

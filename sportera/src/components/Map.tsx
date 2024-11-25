@@ -6,6 +6,8 @@ import SportFilters from './SportFilters';
 import Lightbox from './LightBox';
 import OpenMeteoWeatherOverlay from './WeatherOverlay';
 import SignUpPopup from './SignUpPopup';
+import { storage } from '../firebase';  // Adjust path if needed
+import { ref, getDownloadURL } from 'firebase/storage';
 import './styles/Map.css';
 import './styles/Filters.css';
 import './styles/SocialLinks.css';
@@ -114,11 +116,31 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
     div.setAttribute('role', 'dialog');
     div.setAttribute('aria-label', `Information about ${annotation.title}`);
   
+    // Only try to add image if folder exists
     if (annotation.data.folder) {
       const image = document.createElement("img");
       image.className = "callout-image";
-      image.alt = `Image of ${annotation.title}`;
-      image.src = `/images/places/${annotation.data.folder}/${annotation.data.folder}1.jpg`;
+      image.alt = `Fotka hřiště se načítá`;
+      
+      // Add loading class initially
+      image.classList.add('loading');
+      
+      // Try to load from Firebase Storage
+      const imageRef = ref(storage, `places/brno/${annotation.data.folder}/${annotation.data.folder}1.jpg`);
+      getDownloadURL(imageRef)
+        .then(url => {
+          image.src = url;
+          // Remove loading class when image loads
+          image.onload = () => {
+            image.classList.remove('loading');
+          };
+        })
+        .catch(error => {
+          console.error('Error loading image from Firebase:', error);
+          // Just remove the image element if loading fails
+          image.remove();
+        });
+
       image.addEventListener('click', () => {
         loadImagesForLightbox(annotation.data.folder);
       });
@@ -380,7 +402,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   }, [onFilterToggle]);
 
   const toggleSignUp = useCallback(() => {
-    setIsSignUpOpen(prev => !prev);
+        setIsSignUpOpen(prev => !prev);
   }, []);
 
   return (
