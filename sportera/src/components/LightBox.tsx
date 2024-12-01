@@ -1,4 +1,6 @@
 import React, { useCallback, useRef, TouchEvent, useState, useEffect } from 'react';
+import { storage } from '../firebase';
+import { ref, getDownloadURL } from 'firebase/storage';
 import './styles/Lightbox.css';
 
 interface LightboxProps {
@@ -13,23 +15,40 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
   const touchStartY = useRef<number | null>(null);
   const [dragDistance, setDragDistance] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
+  const [loadedImages, setLoadedImages] = useState<Record<string, string>>({});  // Changed to object
+  const loadingRef = useRef<Set<string>>(new Set());  // Track which images are being loaded
 
   useEffect(() => {
-    const loadImage = (index: number) => {
-      if (index >= 0 && index < images.length && !loadedImages.includes(images[index])) {
-        const img = new Image();
-        img.src = images[index];
-        img.onload = () => {
-          setLoadedImages(prev => [...prev, images[index]]);
-        };
+    const loadImage = async (index: number) => {
+      if (index >= 0 && index < images.length) {
+        const path = images[index];
+        
+        // Skip if already loaded or currently loading
+        if (loadedImages[path] || loadingRef.current.has(path)) return;
+        
+        // Mark as loading
+        loadingRef.current.add(path);
+
+        try {
+          const imageRef = ref(storage, path);
+          const url = await getDownloadURL(imageRef);
+          setLoadedImages(prev => ({
+            ...prev,
+            [path]: url
+          }));
+        } catch (error) {
+          console.error('Error loading image:', error);
+        } finally {
+          loadingRef.current.delete(path);
+        }
       }
     };
 
+    // Load current image and neighbors
     loadImage(currentIndex);
     loadImage(currentIndex + 1);
     loadImage(currentIndex - 1);
-  }, [currentIndex, images, loadedImages]);
+  }, [currentIndex, images]); 
 
   const handleTouchStart = (e: TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -55,10 +74,8 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
     const diffY = touchStartY.current - touchEndY;
 
     if (Math.abs(diffY) > 100 && Math.abs(diffY) > Math.abs(diffX)) {
-      // Swipe down
       onClose();
     } else if (Math.abs(diffX) > 50) {
-      // Swipe left/right
       if (diffX > 0) {
         goToNext();
       } else {
@@ -105,9 +122,9 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
   return (
     <div className="lightbox" onClick={onClose}>
       <div className="lightbox-image-container">
-        {loadedImages.includes(images[currentIndex]) ? (
+        {loadedImages[images[currentIndex]] ? (
           <img 
-            src={images[currentIndex]} 
+            src={loadedImages[images[currentIndex]]}
             alt={`Image ${currentIndex + 1}`} 
             onClick={(e) => e.stopPropagation()}
             onTouchStart={handleTouchStart}
@@ -116,7 +133,7 @@ const Lightbox: React.FC<LightboxProps> = ({ images, currentIndex, onClose, onNa
             style={imageStyle}
           />
         ) : (
-          <div className="loading-placeholder">Loading...</div>
+          <div className="loading-placeholder">Načítáme...</div>
         )}
       </div>
       {images.length > 1 && (

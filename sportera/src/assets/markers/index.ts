@@ -10,6 +10,7 @@ import workoutMarker from './workout.png';
 import parkourMarker from './parkour.png';
 import bfMarker from './bf.png';
 import bfvMarker from './bfv.png';
+import clusterIcon from './clusterIcon.png';
 
 export {
   gymMarker,
@@ -23,5 +24,6 @@ export {
   workoutMarker,
   parkourMarker,
   bfMarker,
-  bfvMarker
+  bfvMarker,
+  clusterIcon
 };

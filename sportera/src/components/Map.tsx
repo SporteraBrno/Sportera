@@ -35,6 +35,7 @@ interface Place {
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
 
+
 interface MapProps {
   onFilterToggle: () => void;
 }
@@ -81,33 +82,44 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
   }, []);
 
   const loadImagesForLightbox = useCallback((folder: string) => {
-    const images: string[] = [];
-    let i = 1;
+    const MAX_IMAGES = 10; // Set a reasonable limit
+    const imagePaths: string[] = [];
     
-    const checkImage = (index: number) => {
-      const checkExtension = (ext: string) => {
-        const img = new Image();
-        img.src = `/images/places/${folder}/${folder}${index}.${ext}`;
-        img.onload = () => {
-          images.push(img.src);
-          checkImage(index + 1);
-        };
-        img.onerror = () => {
-          if (ext === 'jpg') {
-            checkExtension('jpeg');
-          } else if (images.length > 0) {
-            setLightboxImages(images);
-            setLightboxIndex(0);
-          } else {
-            console.log("No images found for this location");
-          }
-        };
-      };
-  
-      checkExtension('jpg');
+    const checkImage = async (index: number) => {
+      if (index > MAX_IMAGES) {
+        // If we've found any images, set them in state
+        if (imagePaths.length > 0) {
+          setLightboxImages(imagePaths);
+          setLightboxIndex(0);
+        }
+        return;
+      }
+
+      try {
+        // Try to get download URL to verify image exists
+        const path = `places/brno/${folder}/${folder}${index}.jpg`;
+        const imageRef = ref(storage, path);
+        await getDownloadURL(imageRef); // Just check if it exists
+        
+        // If we got here, the image exists
+        imagePaths.push(path);
+        // Continue to next image
+        await checkImage(index + 1);
+      } catch (error) {
+        // If error, we've reached the end of available images
+        if (imagePaths.length > 0) {
+          setLightboxImages(imagePaths);
+          setLightboxIndex(0);
+        } else {
+          console.log(`No images found for location: ${folder}`);
+        }
+      }
     };
-  
-    checkImage(i);
+
+    // Start checking from first image
+    checkImage(1).catch(error => {
+      console.error('Error loading images:', error);
+    });
   }, []);
 
   const createCustomCallout = useCallback((annotation: any) => {

@@ -220,7 +220,7 @@
     "Reel": "https://www.instagram.com/reel/C6LisT9KJmB/"
   },
   {
-    "Name": "Lesná, nádraží",
+    "Name": "Basketbal ul. Studená",
     "Latitude": 49.222735,
     "Longitude": 16.629669,
     "Sport": "bas",
@@ -242,7 +242,7 @@
     "Reel": "https://www.instagram.com/reel/C6GZ3MdKOMT/"
   },
   {
-    "Name": "Na Vyhlídce",
+    "Name": "Workout - Na Vyhlídce",
     "Latitude": 49.223594,
     "Longitude": 16.633269,
     "Sport": "wor",
@@ -257,7 +257,7 @@
     "Latitude": 49.22797,
     "Longitude": 16.631886,
     "Sport": "par",
-    "Description": "Parkour hřiště s těžšími překážkama",
+    "Description": "Parkour hřiště s těžšími překážkami",
     "Opening": "otevřeno 24/7",
     "Folder": "par_barvy",
     "Rating": 1,
@@ -349,7 +349,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "wor_luzanky2",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5NowYpKeGs/"
   },
   {
     "Name": "Inline park Lužánky",
@@ -360,7 +360,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "ska_luzanky",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5NowYpKeGs/"
   },
   {
     "Name": "Volej Buf",
@@ -382,7 +382,7 @@
     "Opening": "otevřeno 24/7",
     "Folder": "wor_kolecko",
     "Rating": 1,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/C5BDI-wNCuS/"
   },
   {
     "Name": "Božetěchův sad",
@@ -565,7 +565,7 @@
     "Latitude": 49.2192443,
     "Longitude": 16.577536,
     "Sport": "wor",
-    "Description": "Workout hřiště od cvicimeworkout.cz",
+    "Description": "Workout hřiště od www.cvicimeworkout.cz",
     "Opening": "otevřeno 24/7",
     "Folder": "wor_kralovopolska",
     "Rating": 3,
@@ -616,11 +616,11 @@
     "Reel": ""
   },
   {
-    "Name": "Basket Ečerova",
+    "Name": "Basketbal Kuršova",
     "Latitude": 49.220149,
     "Longitude": 16.506242,
     "Sport": "bas",
-    "Description": "",
+    "Description": "Dva koše na basket a tyče na volejbal. Povrch asfalt. Čáry jsou dobře viditelné .",
     "Opening": "",
     "Folder": "",
     "Rating": 1,
@@ -632,7 +632,7 @@
     "Longitude": 16.500325,
     "Sport": "bf",
     "Description": "Velké a nové multifunkční hřiště na basket a fotbal. Na hřišti je 6 branek na fotbal a 4 koše na basket. Povrch je tartan a čáry jsou viditelné",
-    "Opening": "",
+    "Opening": "Otevřeno 8:00 - 21:00",
     "Folder": "",
     "Rating": 1,
     "Reel": ""
@@ -643,7 +643,7 @@
     "Longitude": 16.50034,
     "Sport": "wor",
     "Description": "Nové hřiště na workout. Povrch tartan. Mnoho prvků na cvičení.",
-    "Opening": "",
+    "Opening": "Otevřeno 8:00 - 21:00",
     "Folder": "",
     "Rating": 1,
     "Reel": ""
@@ -654,7 +654,7 @@
     "Longitude": 16.500031,
     "Sport": "par",
     "Description": "Nové a rozlehlé hřiště na parkour. Mnoho různých překážek a prvku na trénink.",
-    "Opening": "",
+    "Opening": "Otevřeno 8:00 - 21:00",
     "Folder": "",
     "Rating": 1,
     "Reel": ""
@@ -665,7 +665,7 @@
     "Longitude": 16.500019,
     "Sport": "bou",
     "Description": "Malá zeď na lezení. Ideální pro úplné začátečníky nebo děti.",
-    "Opening": "",
+    "Opening": "Otevřeno 8:00 - 21:00",
     "Folder": "",
     "Rating": 2,
     "Reel": ""
@@ -679,7 +679,7 @@
     "Opening": "",
     "Folder": "",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DA0iiMvKBrc/"
   },
   {
     "Name": "Jana Babáka",
@@ -690,7 +690,7 @@
     "Opening": "",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DA0iiMvKBrc/"
   },
   {
     "Name": "Jana Babáka",
@@ -701,7 +701,7 @@
     "Opening": "",
     "Folder": "",
     "Rating": 3,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DA0iiMvKBrc/"
   },
   {
     "Name": "Jana Babáka",
@@ -712,28 +712,138 @@
     "Opening": "",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DA0iiMvKBrc/"
   },
   {
     "Name": "Jana Babáka",
     "Latitude": 49.214356,
     "Longitude": 16.589357,
     "Sport": "par",
-    "Description": "Malé hřiště na parkour. Pouze pár překážek a prvku. Povrch je tartan.",
+    "Description": "Malé hřiště na parkour. Pouze pár překážek a prvků. Povrch je tartan.",
     "Opening": "",
     "Folder": "",
     "Rating": 2,
-    "Reel": ""
+    "Reel": "https://www.instagram.com/reel/DA0iiMvKBrc/"
   },
   {
     "Name": "Hřiště Draken",
     "Latitude": 49.202506,
     "Longitude": 16.585314,
     "Sport": "foo",
-    "Description": "",
-    "Opening": "",
+    "Description": "Dvě hřiště na fotbal. Jedno s betonovým povrchem a druhé s umělou trávou. Obě jsou v dobrém stavu.",
+    "Opening": "Otevřeno 9:00 - 23:00",
     "Folder": "",
     "Rating": 1,
     "Reel": "https://www.instagram.com/reel/C40Yf-iq03b/"
+  },
+  {
+    "Name": "Workout - Draci Brno",
+    "Latitude": 49.1671106,
+    "Longitude": 16.6236877,
+    "Sport": "wor",
+    "Description": "Větší workout hřiště v dobrém stavu. Součástí je i zastřešené posezení.",
+    "Opening": "Otevřeno 24/7",
+    "Folder": "",
+    "Rating": 1,
+    "Reel": ""
+  },
+  {
+    "Name": "Wokrout - Komec",
+    "Latitude": 49.168496,
+    "Longitude": 16.6231388,
+    "Sport": "wor",
+    "Description": "Moderní a dobře vybavené workout hřiště.",
+    "Opening": "Otevřeno 24/7",
+    "Folder": "",
+    "Rating": 1,
+    "Reel": ""
+  },
+  {
+    "Name": "Skatepark Komec",
+    "Latitude": 49.16971633,
+    "Longitude": 16.6242609,
+    "Sport": "ska",
+    "Description": "Malý skatepark vhodny pro začátečníky. Obsahuje jen pár jezdeckých prvků.",
+    "Opening": "Otevřeno 8:00 - 22:00",
+    "Folder": "",
+    "Rating": 2,
+    "Reel": ""
+  },
+  {
+    "Name": "Fotbalové hriště Komec",
+    "Latitude": 49.16898712,
+    "Longitude": 16.62385102,
+    "Sport": "bfv",
+    "Description": "Víceúčelové hřiště pro míčové hry, nutno odemknout. Klíče jsou v hlavní budově areálu. Záloha 200kč",
+    "Opening": "Otevřeno 10:00 - 21:00",
+    "Folder": "",
+    "Rating": 1,
+    "Reel": ""
+  },
+  {
+    "Name": "Skatepark Černovická",
+    "Latitude": 49.1781988,
+    "Longitude": 16.6282488,
+    "Sport": "ska",
+    "Description": "Skatepark s betonovým povrchem. Součástí jsou i železné rampy a další jezdecké prvky.",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 3,
+    "Reel": ""
+  },
+  {
+    "Name": "Basketbal Černovická",
+    "Latitude": 49.1785361,
+    "Longitude": 16.6280361,
+    "Sport": "bas",
+    "Description": "Tři basketbalové hřiště vedle sebe na velké betonové ploše. Čáry jsou dobře viditelné a koše jsou v dobrém stavu.",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 2,
+    "Reel": ""
+  },
+  {
+    "Name": "Basketbal ul. Turgeňova",
+    "Latitude": 49.18875727,
+    "Longitude": 16.64456078,
+    "Sport": "bas",
+    "Description": "Basketbalové hřiště v dostačujícím stavu. Povrch je uměla tráva. Pouze jeden koš.",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 3,
+    "Reel": ""
+  },
+  {
+    "Name": "Workout Park Řehova",
+    "Latitude": 49.18408552,
+    "Longitude": 16.63646253,
+    "Sport": "wor",
+    "Description": "Menší workout hřiště. V dobrém stavu. Umístěno uprostřed menšího parku.",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 2,
+    "Reel": ""
+  },
+  {
+    "Name": "Basketbal Pakr Řehová",
+    "Latitude": 49.18417548,
+    "Longitude": 16.63617411,
+    "Sport": "bas",
+    "Description": "Polovina basketbalového hřiště. Povrch je asfaltový a kos je v dobrém stavu. Hřiště je oploceno nízkým plotem.",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 2,
+    "Reel": ""
+  },
+  {
+    "Name": "Basketbal ul. Vejrostova",
+    "Latitude": 49.2207131,
+    "Longitude": 16.5096369,
+    "Sport": "bas",
+    "Description": "Polovina basketbalového hřiště s jedním košem a betonovým povrchem.",
+    "Opening": "",
+    "Folder": "",
+    "Rating": 3,
+    "Reel": ""
   }
 ]
