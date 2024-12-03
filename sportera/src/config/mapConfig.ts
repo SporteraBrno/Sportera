@@ -3,8 +3,8 @@ export const mapKitConfig = {
   initialRegion: {
     latitude: 49.2051,
     longitude: 16.6068,
-    latitudeDelta: 0.10,
-    longitudeDelta: 0.10
+    latitudeDelta: 0.14,
+    longitudeDelta: 0.14
   },
   mapSettings: {
     showsUserLocation: true,

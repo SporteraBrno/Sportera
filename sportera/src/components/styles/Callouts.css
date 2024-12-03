@@ -184,3 +184,36 @@
   display: block;
   border-radius: 15px;
 }
+
+.custom-callout.decathlon-callout {
+  background-color: rgba(196, 218, 255, 0.4);
+  border: 1px solid rgba(181, 169, 255, 0.3);
+}
+
+.decathlon-callout .callout-title {
+  text-shadow: 0 0px rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-family: 'Roboto', 'Roboto fallback', 'system-ui', '-apple-system', 'Arial', 'sans-serif';
+  font-weight: 700;
+}
+
+.decathlon-callout .callout-title a {
+  color: #3943b3;
+  text-decoration: none;
+  text-shadow: none;
+  margin-bottom: 8px;
+}
+
+.decathlon-callout .callout-description {
+  text-shadow: none;
+  margin-bottom: 45px;
+  opacity: 0.9;
+  font-family: 'Roboto', 'Roboto fallback', 'system-ui', '-apple-system', 'Arial', 'sans-serif';
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

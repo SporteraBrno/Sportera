@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useCallback, useState } from 'react';
 import { mapKitConfig } from '@config/mapConfig';
 import places from '../data/places.json';
+import decathlons from '../data/decathlons.json'
 import * as markers from '../assets/markers';
 import SportFilters from './SportFilters';
 import Lightbox from './LightBox';
@@ -31,6 +32,14 @@ interface Place {
   Folder: string;
   Rating?: number;
   Reel?: string;
+}
+
+interface Decathlon {
+  Name: string;
+  Latitude: number;
+  Longitude: number;
+  Description: string;
+  reel?: string;  // Optional reel URL
 }
 
 const brnoCoordinates = { latitude: 49.1951, longitude: 16.6068 };
@@ -316,13 +325,14 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       region: new window.mapkit.CoordinateRegion(center, span),
       ...mapKitConfig.mapSettings,
     });
-
+  
     (mapInstanceRef.current as any)._allowWheelToZoom = true;
-
+  
     mapInstanceRef.current.addEventListener('zoom-start', hideFilters);
     mapInstanceRef.current.addEventListener('pan-start', hideFilters);
     mapInstanceRef.current.addEventListener('single-tap', hideFilters);
   
+    // Add sport places markers
     places.forEach((place: Place) => {
       const markerIcon = getMarkerIcon(place.Sport);
       if (markerIcon) {
@@ -351,7 +361,102 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
         annotationsRef.current.push(annotation);
       }
     });
+  
+    // Add Decathlon markers
+    decathlons.forEach((decathlon: Decathlon) => {
+// In your decathlons.forEach loop, modify the annotation creation:
+const annotation = new window.mapkit.ImageAnnotation(
+  new window.mapkit.Coordinate(decathlon.Latitude, decathlon.Longitude),
+  {
+    title: decathlon.Name,
+    subtitle: decathlon.Description,
+    url: { 1: markers.decathlon },
+    size: { width: 32, height: 32 },
+    anchorOffset: new window.DOMPoint(0, -15),
+    callout: {
+      calloutElementForAnnotation: (annotation: any) => {
+        const div = document.createElement("div");
+        div.className = "custom-callout decathlon-callout";
+        
+        const contentDiv = document.createElement("div");
+        contentDiv.className = "callout-content";
+        
+        const title = document.createElement("h2");
+        title.className = "callout-title selectable";
+        const titleLink = document.createElement("a");
+        titleLink.href = "https://www.decathlon.cz/";
+        titleLink.target = "_blank";
+        titleLink.rel = "noopener noreferrer";
+        titleLink.textContent = annotation.title;
+        title.appendChild(titleLink);
+        contentDiv.appendChild(title);
+        
+        const description = document.createElement("p");
+        description.className = "callout-description selectable";
+        description.textContent = annotation.subtitle;
+        contentDiv.appendChild(description);
+        
+        const footer = document.createElement("div");
+        footer.className = "callout-footer";
+        
+        // Add navigation button
+        const button = document.createElement("button");
+        button.className = "callout-nav-button";
+        button.innerHTML = '<img src="/images/navigate-icon.svg" alt="Navigate" />';
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const url = `https://www.google.com/maps/search/?api=1&query=${annotation.coordinate.latitude},${annotation.coordinate.longitude}`;
+          if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = url;
+          } else {
+            window.open(url, '_blank');
+          }
+        });
+        footer.appendChild(button);
+      
+        // Add Instagram reel button only if there's a reel URL
+        if (annotation.data.reel) {
+          const reelButton = document.createElement("button");
+          reelButton.className = "callout-reel-button";
+          reelButton.innerHTML = '<img src="/images/instagram_logo.svg" alt="Watch Instagram Reel" />';
+          reelButton.addEventListener('click', () => {
+            const reelUrl = annotation.data.reel;
+            const cleanReelUrl = reelUrl.split('?')[0];
+            
+            if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+              window.location.href = cleanReelUrl;
+            } else if (/Android/i.test(navigator.userAgent)) {
+              const reelId = cleanReelUrl.split('/reel/')[1].replace('/', '');
+              const instagramAppUrl = `intent://instagram.com/reel/${reelId}#Intent;package=com.instagram.android;scheme=https;end`;
+              window.location.href = instagramAppUrl;
+              setTimeout(() => {
+                window.location.href = cleanReelUrl;
+              }, 2000);
+            } else {
+              window.open(cleanReelUrl, '_blank');
+            }
+          });
+          footer.appendChild(reelButton);
+        }
+        
+        contentDiv.appendChild(footer);
+        div.appendChild(contentDiv);
+        
+        return div;
+      }
+    },
+    accessibilityLabel: `${decathlon.Name}`,
+    data: { 
+      isDecathlon: true
+    },
+  }
+);
+      mapInstanceRef.current.addAnnotation(annotation);
+      // Add to a separate array or with a flag to distinguish from sport annotations
+      annotationsRef.current.push(annotation);
+    });
   }, [createCustomCallout, getMarkerIcon, hideFilters]);
+
   useEffect(() => {
     if (!window.mapkit) {
       const script = document.createElement('script');

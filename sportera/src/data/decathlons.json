@@ -1,0 +1,158 @@
+[
+    {
+      "Name": "Decathlon Praha - Černý Most",
+      "Latitude": 50.107083, 
+      "Longitude": 14.581380,
+      "Description": "Sportovní vybavení a oblečení pro všechny věkové kategorie."
+    },
+    {
+      "Name": "Decathlon Praha - Zličín",
+      "Latitude": 50.049653,
+      "Longitude": 14.296118,
+      "Description": "Nabízí široký výběr sportovního vybavení."
+    },
+    {
+        "Name": "Decathlon Praha - Letňany",
+        "Latitude": 50.140486, 
+        "Longitude": 14.498457,
+        "Description": "Nabízí široký výběr sportovního vybavení."
+    },
+    {
+      "Name": "Decathlon Praha - Nový Smíchov",
+      "Latitude": 50.072107, 
+      "Longitude": 14.401963,
+      "Description": "Nabízí široký výběr sportovního vybavení."
+    },
+    {
+      "Name": "Decathlon Brno - Modřice",
+      "Latitude": 49.138054,
+      "Longitude": 16.637938,
+      "Description": "Komplexní sortiment sportovního vybavení."
+    },
+    {
+      "Name": "Decathlon Ostrava - Avion",
+      "Latitude": 49.797593, 
+      "Longitude": 18.223843,
+      "Description": "Velký výběr vybavení pro sport a outdoorové aktivity."
+    },
+    {
+      "Name": "Decathlon Ostrava - Avion",
+      "Latitude": 49.833796,
+      "Longitude": 18.266409,
+      "Description": "Velký výběr vybavení pro sport a outdoorové aktivity."
+    },
+    {
+      "Name": "Decathlon Plzeň",
+      "Latitude": 49.727019,
+      "Longitude": 13.347412,
+      "Description": "Sportovní zboží a oblečení pro aktivní životní styl."
+    },
+    {
+      "Name": "Decathlon Hradec Králové",
+      "Latitude": 50.187278, 
+      "Longitude": 15.804102,
+      "Description": "Vybavení pro sportovce od začátečníků po profesionály."
+    },
+    {
+      "Name": "Decathlon Liberec",
+      "Latitude": 50.773768, 
+      "Longitude": 15.029570,
+      "Description": "Místní obchod pro širokou škálu sportovních aktivit."
+    },
+    {
+        "Name": "Decathlon Praha - Chodov",
+        "Latitude": 50.036807, 
+        "Longitude": 14.491824,
+        "Description": "Nabízí široký výběr sportovního vybavení."
+    },
+    {
+        "Name": "Decathlon Praha - Harfa",
+        "Latitude": 50.105102, 
+        "Longitude": 14.491482,
+        "Description": "Nabízí široký výběr sportovního vybavení."
+    },
+    {
+      "Name": "Decathlon České Budějovice",
+      "Latitude": 49.003911, 
+      "Longitude": 14.450527,
+      "Description": "Cenově dostupné sportovní potřeby."
+    },
+    {
+        "Name": "Decathlon Zlín",
+        "Latitude": 49.204065, 
+        "Longitude": 17.570047,
+        "Description": "Sportovní vybavení a oblečení"
+    },
+    {
+        "Name": "Decathlon Kladno",
+        "Latitude": 50.126993,
+        "Longitude": 14.123667,
+        "Description": "Sportovní potřeby pro různé sporty"
+    },
+    {
+        "Name": "Decathlon Teplice",
+        "Latitude": 50.660302, 
+        "Longitude": 13.863937,
+        "Description": "Sportovní oblečení a příslušenství"
+    },
+    {
+        "Name": "Decathlon Opava",
+        "Latitude": 49.932070,
+        "Longitude": 17.919186,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Karviná",
+        "Latitude": 49.856136,
+        "Longitude": 18.546328,
+        "Description": "Sportovní potřeby pro všechny úrovně"
+    },
+    {
+        "Name": "Decathlon Karlovy Vary",
+        "Latitude": 50.219867, 
+        "Longitude": 12.805932,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Mladá Boleslav",
+        "Latitude": 50.408895, 
+        "Longitude": 14.944848,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Tábor",
+        "Latitude": 49.389149,
+        "Longitude": 14.694468,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Brno - Ivanovice",
+        "Latitude": 49.260813,
+        "Longitude": 16.580411,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Jihlava",
+        "Latitude": 49.395922,
+        "Longitude": 15.608592,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Pardubice",
+        "Latitude": 50.053935,
+        "Longitude": 15.763998,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Olomouc",
+        "Latitude": 49.573413, 
+        "Longitude": 17.226108,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    },
+    {
+        "Name": "Decathlon Frýdek-Místek",
+        "Latitude": 49.671607,
+        "Longitude": 18.330136,
+        "Description": "Sportovní vybavení dostupné pro všechny"
+    }
+]
