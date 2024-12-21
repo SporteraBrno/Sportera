@@ -12,9 +12,8 @@
 .sign-up-button {
   position: fixed;
   z-index: 998;
-  /* Increased to be above the filter button */
   padding: 8px 12px;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(230, 247, 254, 0.65);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: black;
@@ -26,20 +25,53 @@
   font-family: 'Patrick Hand', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .sign-up-button:hover,
 .sign-up-button:active {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(230, 247, 254, 0.85);
   transform: scale(1.05);
+}
+
+.social-links {
+  position: fixed;
+  z-index: 998;
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.social-link img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 }
 
 /* Desktop styles */
 @media (min-width: 768px) {
   .sign-up-button {
     position: absolute;
-    top: 15px;
-    left: 175px;
+    top: 12px;
+    left: 130px;
     transform: translateX(-50%);
   }
 
@@ -51,13 +83,10 @@
 /* Mobile styles */
 @media (max-width: 767px) {
   .sign-up-button {
-    bottom: 95px;
-    /* Adjusted to be above the filter button */
+    bottom: 105px;
     right: 10px;
     transform: none;
     font-size: 20px;
-    /* Slightly smaller font size for mobile */
     padding: 6px 10px;
-    /* Slightly smaller padding for mobile */
   }
 }

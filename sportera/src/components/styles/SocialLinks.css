@@ -1,6 +1,6 @@
 .social-links {
   position: fixed;
-  top: 15px;
+  top: 12px;
   left: 15px;
   z-index: 2;
   display: flex;
@@ -11,8 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -24,6 +24,6 @@
 }
 
 .social-logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }

@@ -1,3 +1,4 @@
+/* Base container styles */
 .filters-container {
   position: fixed;
   z-index: 1000;
@@ -8,6 +9,83 @@
   transition: transform 0.3s ease-in-out;
 }
 
+/* Custom Checkbox styles */
+.select-all-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.select-all-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Unchecked box */
+.select-all-checkbox span::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  border: 2px solid #666;
+  border-radius: 6px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+/* Checkmark */
+.select-all-checkbox span::after {
+  content: '';
+  position: absolute;
+  top: 24px;  
+  left: 50%;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover state */
+.select-all-checkbox:hover span::before {
+  border-color: #22e1b9;
+}
+
+/* Checked state */
+.select-all-checkbox input:checked ~ span::before {
+  background-color: #22e1b9;
+  border-color: #22e1b9;
+}
+
+.select-all-checkbox input:checked ~ span::after {
+  opacity: 1;
+}
+
+/* Text label */
+.select-all-checkbox span {
+  font-size: 13px;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: -1px 0 rgba(255, 255, 255, 0.7), 0 1px rgb(255, 255, 255, 0.7), 1px 0 rgb(255, 255, 255, 0.7), 0 -1px rgb(255, 255, 255, 0.7);
+  margin-top: 45px;
+}
+
+/* Desktop styles */
 @media (min-width: 768px) {
   .filters-container {
     top: 0;
@@ -17,6 +95,8 @@
     padding: 5px;
     border-radius: 20px 0 0 20px;
     transform: translateX(100%);
+    display: flex;
+    align-items: center;
   }
 
   .filters-container.visible {
@@ -25,17 +105,43 @@
 
   .sport-filters {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 1px;
     justify-items: center;
+    width: 100%;
   }
 
   .sport-icon {
     width: 50px;
     height: 50px;
   }
+
+  .select-all-checkbox {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+  }
+
+  .select-all-checkbox span::before {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+  }
+  
+  .select-all-checkbox span::after {
+    top: 20px;
+    width: 7px;
+    height: 13px;
+  }
+  
+  .sport-filter-button:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
 }
 
+/* Mobile styles */
 @media (max-width: 767px) {
   .filters-container {
     left: 0;
@@ -44,20 +150,24 @@
     padding: 5px 0 0;
     border-radius: 20px 20px 0 0;
     transform: translateY(100%);
-    overflow: hidden;
   }
 
   .filters-container.visible {
     transform: translateY(0);
-    bottom: 0;
   }
 
   .sport-filters {
     display: flex;
     overflow-x: auto;
     gap: 2px;
-    padding: 0 5px 0px;
-    margin: 0 -5px;
+    padding: 5px 5px 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sport-filters::-webkit-scrollbar {
+    display: none;
   }
 
   .sport-filter-button {
@@ -65,16 +175,32 @@
   }
 
   .sport-icon {
-    width: 67px;
-    height: 67px;
+    width: 60px;
+    height: 60px;
   }
+
+  .select-all-checkbox {
+    position: absolute;
+    bottom: 100%;
+    left: 5px;
+    margin-bottom: 10px;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+  }
+
+  .filters-container.visible .select-all-checkbox {
+    transform: translateY(0);
+  }
+
+
 }
 
+/* Filter toggle button styles */
 .filter-toggle-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1001;
+  z-index: 998;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border-radius: 50%;
@@ -88,6 +214,7 @@
   align-items: center;
   padding: 0;
   overflow: hidden;
+  animation: pulse 2s infinite;
 }
 
 .filter-toggle-button::before {
@@ -115,6 +242,14 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
 
+.filter-toggle-button:hover img {
+  transform: scale(1.05);
+}
+
+.filter-toggle-button:active {
+  transform: scale(0.95);
+}
+
 .filter-toggle-button.hidden {
   display: none;
 }
@@ -127,36 +262,7 @@
   transition: transform 0.3s ease;
 }
 
-.filter-toggle-button:hover img {
-  transform: scale(1.05);
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-.filter-toggle-button {
-  bottom: 10px;
-  right: 10px;
-  animation: pulse 2s infinite;
-  z-index: 998;
-}
-
-.filter-toggle-button:active {
-  transform: scale(0.95);
-}
-
+/* Sport filter button styles */
 .sport-filter-button {
   background: none;
   border: none;
@@ -170,4 +276,21 @@
 .sport-filter-button.inactive {
   opacity: 0.4;
   transform: scale(0.9);
+}
+
+.sport-filter-button.active {
+  animation: selectPop 0.3s ease-out;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes selectPop {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }

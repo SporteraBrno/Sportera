@@ -16,7 +16,7 @@
         "Latitude": 50.140486, 
         "Longitude": 14.498457,
         "Description": "Nabízí široký výběr sportovního vybavení."
-    },
+    },  
     {
       "Name": "Decathlon Praha - Nový Smíchov",
       "Latitude": 50.072107, 
@@ -36,7 +36,7 @@
       "Description": "Velký výběr vybavení pro sport a outdoorové aktivity."
     },
     {
-      "Name": "Decathlon Ostrava - Avion",
+      "Name": "Decathlon Ostrava - Centrum",
       "Latitude": 49.833796,
       "Longitude": 18.266409,
       "Description": "Velký výběr vybavení pro sport a outdoorové aktivity."
@@ -100,12 +100,6 @@
         "Latitude": 49.932070,
         "Longitude": 17.919186,
         "Description": "Sportovní vybavení dostupné pro všechny"
-    },
-    {
-        "Name": "Decathlon Karviná",
-        "Latitude": 49.856136,
-        "Longitude": 18.546328,
-        "Description": "Sportovní potřeby pro všechny úrovně"
     },
     {
         "Name": "Decathlon Karlovy Vary",
