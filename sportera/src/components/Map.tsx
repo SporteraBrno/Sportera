@@ -566,7 +566,7 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
         <div className="social-links">
 
           <button 
-            onClick={() => navigate('/o-nas')}
+            onClick={() => navigate('/info')}
             className="social-link about-link"
             aria-label="Go to About page"
           >

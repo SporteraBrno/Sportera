@@ -30,7 +30,7 @@ function App() {
               </div>
             } 
           />
-          <Route path="/o-nas" element={<AboutPage />} />
+          <Route path="/info" element={<AboutPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

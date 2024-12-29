@@ -23,10 +23,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* Add smooth scrolling for the about page */
-.about-page {
-  height: 100%;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
