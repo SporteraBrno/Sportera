@@ -37,11 +37,10 @@ const AboutPage: React.FC = () => {
 
                 <div className="content-container">
                     <section className="about-section">
-                        <p className="about-text">
-                            Sportera je váš průvodce světem venkovního sportování v Brně. 
-                            Najděte snadno a rychle sportovní hřiště ve vašem okolí, 
-                            prohlédněte si fotografie a získejte všechny potřebné informace.
-                        </p>
+                    <p className="about-text">
+  Nevíš kde a s kým sportovat? Sportera je aplikace přesně pro tebe. Ukáže ti všechna veřejná sportoviště poblíž a spojí tě s ostatními sportovci. Klikni na mapu a vyzkoušej mnoho dalších funkcí na{' '}
+  <a href="https://sportera.cz" target="_blank" rel="noopener noreferrer">Sportera.cz</a>
+</p>
                     </section>
 
                     <section className="contact-section">
