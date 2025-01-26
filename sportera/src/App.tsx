@@ -1,6 +1,7 @@
 // src/App.tsx
 import { useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider } from './context/AuthProvider';
 import Map from './components/Map';
 import AboutPage from './components/AboutPage';
 import './components/styles/global.css';
@@ -20,20 +21,22 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Routes>
-          <Route 
-            path="/" 
-            element={
-              <div className="map-container">
-                <Map onFilterToggle={handleFilterToggle} />
-              </div>
-            } 
-          />
-          <Route path="/info" element={<AboutPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </div>
+      <AuthProvider>
+        <div className="App">
+          <Routes>
+            <Route 
+              path="/" 
+              element={
+                <div className="map-container">
+                  <Map onFilterToggle={handleFilterToggle} />
+                </div>
+              } 
+            />
+            <Route path="/info" element={<AboutPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
+      </AuthProvider>
     </Router>
   );
 }

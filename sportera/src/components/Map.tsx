@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useCallback, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthProvider';
 import { mapKitConfig } from '@config/mapConfig';
 import places from '../data/places.json';
 import decathlons from '../data/decathlons.json';
@@ -66,6 +67,7 @@ interface RatingPopupPosition {
 
 // Map component
 const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
+  const { user } = useAuth();
   // Constants
   const BRNO_COORDINATES = { latitude: 49.1951, longitude: 16.6068 };
   const INITIAL_SPORTS = BASE_SPORTS.filter(
@@ -555,13 +557,28 @@ const Map: React.FC<MapProps> = React.memo(({ onFilterToggle }) => {
       <div ref={mapRef} className="map" aria-label="Map of sport locations" />
       
       <div className="navigation-group">
-        <button 
-          className="sign-up-button" 
-          onClick={toggleSignUp} 
-          aria-label="Open sign up dialog"
-        >
-          Přihlásit se
-        </button>
+        {user ? (
+          <button 
+            className="profile-button" 
+            onClick={toggleSignUp}
+            aria-label="Otevřít profil"
+          >
+            {user.photoURL ? (
+              <img src={user.photoURL} alt="Profilový obrázek" className="profile-image" />
+            ) : (
+              <img src="/images/ProfileButton.png" alt="Profil" className="profile-image" />
+            )}
+          </button>
+        ) : (
+          <button 
+            className="sign-up-button" 
+            onClick={toggleSignUp} 
+            aria-label="Přihlásit se"
+          >
+            Přihlásit se
+          </button>
+        )}
+
 
         <div className="social-links">
 
